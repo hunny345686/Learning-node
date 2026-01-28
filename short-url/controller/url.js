@@ -12,6 +12,9 @@ async function handleGenrateNewShortURL(req, res) {
         visitHistory:[]
     })
 
+console.log(shortId)
+    return res.render("home",{id:shortId})
+
     return res.status(201).json({msg:"URL is creted",id:shortId})
 }
 
