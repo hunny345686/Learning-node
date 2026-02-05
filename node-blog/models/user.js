@@ -1,4 +1,5 @@
 import mongoose from "mongoose";
+import { createTokenForUser } from "../services/authentication.js";
 
 const { createHmac, randomBytes } = await import("node:crypto")
 
@@ -42,7 +43,7 @@ userSchema.pre("save", function (next) {
     next()
 })
 
-userSchema.static("matchPassword", async function (email, password) {
+userSchema.static("matchPasswordAndGenrateToken", async function (email, password) {
     const user = await this.findOne({
         email
     })
@@ -55,7 +56,9 @@ userSchema.static("matchPassword", async function (email, password) {
     const userProvidedhashedPaswword = createHmac("sha256", salt).update(password).digest("hex")
     if (hashPassword !== userProvidedhashedPaswword) throw new Error("Password is not match")
 
-    return user
+
+    const token = createTokenForUser(user)
+    return token
 })
 
 export const User = mongoose.model('user', userSchema);

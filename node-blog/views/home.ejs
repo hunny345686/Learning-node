@@ -8,7 +8,24 @@
 
 <body>
     <%- include("./partials/nav") %>
-        <h2>Hello Node Blogs </h2>
+
+        <div class="container">
+            <h2>Node Blogs </h2>
+            <% blogs.forEach(element=> { %>
+                <div class="card mt-4" style="width: 400px;">
+                    <img width="300" height="300" src=<%=element.coverImg %> class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            <%= element.title %>
+                        </h5>
+                        <%= element.body %>
+                            <p class="card-text"></p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+                <% }) %>
+        </div>
+
 
         <%- include("./partials/script") %>
 </body>

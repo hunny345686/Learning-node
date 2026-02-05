@@ -10,14 +10,43 @@
                 <li class="nav-item">
                     <a class="nav-link active" aria-current="page" href="#">Home</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Add Blog</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Pricing</a>
-                </li>
+                <% if (locals.user) { %>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/blog/add-new">Add Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <%= user.email %>
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="/user/logout">log out</a>
+                    </li>
+                    <% } else { %>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="/user/singin">Sign In</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/user/singup">Create Account</a>
+                        </li>
+
+
+                        <% } %>
+
+
+
 
             </ul>
         </div>
     </div>
 </nav>
+
+<% if(locals.err){%>
+    <div class="container">
+        <div class="alert alert-danger d-flex align-items-center" role="alert">
+            <%= locals.err %>
+        </div>
+    </div>
+    <% } %>

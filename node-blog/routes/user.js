@@ -25,9 +25,18 @@ router.get("/singin", (req, res) => {
 })
 router.post("/singin", async (req, res) => {
     const { email, password } = req.body
-    const user = await User.matchPassword(email, password)
-    console.log("user", user)
-    res.redirect("/")
+    try {
+        const token = await User.matchPasswordAndGenrateToken(email, password)
+        return res.cookie("token", token).redirect("/")
+    } catch (error) {
+        res.render("singin", {
+            err: "incorrect curdentails"
+        })
+    }
+})
+
+router.get("/logout", (req, res) => {
+    return res.clearCookie("token").redirect("/")
 })
 
 export default router;
