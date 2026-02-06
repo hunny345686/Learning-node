@@ -4,8 +4,10 @@ import mongoose from 'mongoose';
 import cookieParser from "cookie-parser";
 
 
-mongoose.connect('mongodb+srv://prem:prem@myntra.4mzbesy.mongodb.net/blog')
-    .then(() => console.log('Connected!'));
+mongoose.connect('mongodb+srv://prem:prem@myntra.4mzbesy.mongodb.net/')
+    .then(() => console.log('DB Connected!')).catch((err) => {
+        console.log(err)
+    })
 
 import userRoute from "./routes/user.js"
 import blogRoute from "./routes/blog.js"
