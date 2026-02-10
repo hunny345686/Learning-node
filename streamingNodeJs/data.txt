@@ -1,0 +1,869 @@
+Day	Task	Next.js 16 "Twist"	Status
+1	RSC Interleaving	Async Params: Fetch data in a layout by await-ing params. Pass that data to a Client Component.	Done
+2	Server Actions 2.0	updateTag: Use the new updateTag API to expire cache and "read-your-writes" in one request.	Pending
+3	useActionState	React 19 Stable: Use this for all form states. No more useState for loading/errors.	Pending
+4	Optimistic UI	useOptimistic: Implement a collaborative list where items appear before the DB acknowledges.	Pending
+5	Zod Validation	Typed Actions: Return structured errors from Actions and map them to fields using useActionState.	Pending
+6	Taint API	Security: Use taintObjectReference to block a User's secret API key from ever reaching the client.	Pending
+7	Review	React Compiler: Enable reactCompiler: true and audit how much useMemo you can delete.	Pending
+8	Partial Prerendering	cacheComponents: Enable the new unified flag in next.config.js to trigger PPR.	Pending
+9	Advanced Middleware	Proxy.ts: Note that middleware is often renamed/used as a Proxy in v16 for explicit boundaries.	Pending
+10	Streaming & Suspense	Nested Boundaries: Stream a slow AI-generated summary while the page shell is already interactive.	Pending
+11	Request Memoization	Deduplication: Use the v16 cache() function for non-fetch data (like DB calls) across the tree.	Pending
+12	Advanced TS Patterns	Generic Components: Build a Table component that takes a Generic T and stays 100% type-safe.	Pending
+13	Design Systems	WCAG + Tailwind: Build a system where "High Contrast" mode is a first-class citizen using CSS variables.	Pending
+14	Performance Audit	Turbopack Build: Run your first production build with Turbopack and analyze the bundle map.	Pending
+15	Vercel AI SDK 5	useChat: Implement a streaming chat with the new v5 "Data Parts" for rich metadata.	Pending
+16	Tool Calling	Function Execution: Give your AI a tool to "Check Order Status" from your actual MongoDB.	Pending
+17	RAG Pipeline	Vector DB: Use pgvector or Pinecone to feed your documentation into the AI context.	Pending
+18	Generative UI	Server-to-UI: Have the AI return a <WeatherCard /> or <Chart /> component instead of text.	Pending
+19	Token Management	Summarization: Implement a sliding window for chat history to keep costs low and context high.	Pending
+20	AI Accessibility	Aria-Live: Use aria-live="polite" to ensure screen readers announce streaming AI text correctly.	Pending
+21	Model Comparison	Claude vs GPT-4o: Test which model handles your specific Next.js 16 code patterns better.	Pending
+22	MCP Basics	DevTools MCP: Connect your local dev server to a Claude Desktop agent using the MCP protocol.	Pending
+23	Custom MCP Tools	Git Summarizer: Build an MCP tool that lets the AI read your commits to write a Daily Standup note.	Pending
+24	Multi-Agent Flow	Critic Agent: Agent 1 writes code, Agent 2 reviews it for bugs before the user sees it.	Pending
+25	Real-time Agents	Live Updates: Use WebSockets to let an AI "take over" the UI and guide a user through a flow.	Pending
+26	Vercel Deployment	Edge Functions: Deploy your AI routes to the Edge to minimize TTFB (Time to First Byte).	Pending
+27	Final Project Pt 1	Architecture: Draft the system diagram (Next.js, MongoDB, RAG, MCP).	Pending
+28	Final Project Pt 2	The Pitch: Build a fully functional, AI-powered product that solves a real-world frontend problem.	PendingDay	Task	Next.js 16 "Twist"	Status
+1	RSC Interleaving	Async Params: Fetch data in a layout by await-ing params. Pass that data to a Client Component.	Done
+2	Server Actions 2.0	updateTag: Use the new updateTag API to expire cache and "read-your-writes" in one request.	Pending
+3	useActionState	React 19 Stable: Use this for all form states. No more useState for loading/errors.	Pending
+4	Optimistic UI	useOptimistic: Implement a collaborative list where items appear before the DB acknowledges.	Pending
+5	Zod Validation	Typed Actions: Return structured errors from Actions and map them to fields using useActionState.	Pending
+6	Taint API	Security: Use taintObjectReference to block a User's secret API key from ever reaching the client.	Pending
+7	Review	React Compiler: Enable reactCompiler: true and audit how much useMemo you can delete.	Pending
+8	Partial Prerendering	cacheComponents: Enable the new unified flag in next.config.js to trigger PPR.	Pending
+9	Advanced Middleware	Proxy.ts: Note that middleware is often renamed/used as a Proxy in v16 for explicit boundaries.	Pending
+10	Streaming & Suspense	Nested Boundaries: Stream a slow AI-generated summary while the page shell is already interactive.	Pending
+11	Request Memoization	Deduplication: Use the v16 cache() function for non-fetch data (like DB calls) across the tree.	Pending
+12	Advanced TS Patterns	Generic Components: Build a Table component that takes a Generic T and stays 100% type-safe.	Pending
+13	Design Systems	WCAG + Tailwind: Build a system where "High Contrast" mode is a first-class citizen using CSS variables.	Pending
+14	Performance Audit	Turbopack Build: Run your first production build with Turbopack and analyze the bundle map.	Pending
+15	Vercel AI SDK 5	useChat: Implement a streaming chat with the new v5 "Data Parts" for rich metadata.	Pending
+16	Tool Calling	Function Execution: Give your AI a tool to "Check Order Status" from your actual MongoDB.	Pending
+17	RAG Pipeline	Vector DB: Use pgvector or Pinecone to feed your documentation into the AI context.	Pending
+18	Generative UI	Server-to-UI: Have the AI return a <WeatherCard /> or <Chart /> component instead of text.	Pending
+19	Token Management	Summarization: Implement a sliding window for chat history to keep costs low and context high.	Pending
+20	AI Accessibility	Aria-Live: Use aria-live="polite" to ensure screen readers announce streaming AI text correctly.	Pending
+21	Model Comparison	Claude vs GPT-4o: Test which model handles your specific Next.js 16 code patterns better.	Pending
+22	MCP Basics	DevTools MCP: Connect your local dev server to a Claude Desktop agent using the MCP protocol.	Pending
+23	Custom MCP Tools	Git Summarizer: Build an MCP tool that lets the AI read your commits to write a Daily Standup note.	Pending
+24	Multi-Agent Flow	Critic Agent: Agent 1 writes code, Agent 2 reviews it for bugs before the user sees it.	Pending
+25	Real-time Agents	Live Updates: Use WebSockets to let an AI "take over" the UI and guide a user through a flow.	Pending
+26	Vercel Deployment	Edge Functions: Deploy your AI routes to the Edge to minimize TTFB (Time to First Byte).	Pending
+27	Final Project Pt 1	Architecture: Draft the system diagram (Next.js, MongoDB, RAG, MCP).	Pending
+28	Final Project Pt 2	The Pitch: Build a fully functional, AI-powered product that solves a real-world frontend problem.	PendingDay	Task	Next.js 16 "Twist"	Status
+1	RSC Interleaving	Async Params: Fetch data in a layout by await-ing params. Pass that data to a Client Component.	Done
+2	Server Actions 2.0	updateTag: Use the new updateTag API to expire cache and "read-your-writes" in one request.	Pending
+3	useActionState	React 19 Stable: Use this for all form states. No more useState for loading/errors.	Pending
+4	Optimistic UI	useOptimistic: Implement a collaborative list where items appear before the DB acknowledges.	Pending
+5	Zod Validation	Typed Actions: Return structured errors from Actions and map them to fields using useActionState.	Pending
+6	Taint API	Security: Use taintObjectReference to block a User's secret API key from ever reaching the client.	Pending
+7	Review	React Compiler: Enable reactCompiler: true and audit how much useMemo you can delete.	Pending
+8	Partial Prerendering	cacheComponents: Enable the new unified flag in next.config.js to trigger PPR.	Pending
+9	Advanced Middleware	Proxy.ts: Note that middleware is often renamed/used as a Proxy in v16 for explicit boundaries.	Pending
+10	Streaming & Suspense	Nested Boundaries: Stream a slow AI-generated summary while the page shell is already interactive.	Pending
+11	Request Memoization	Deduplication: Use the v16 cache() function for non-fetch data (like DB calls) across the tree.	Pending
+12	Advanced TS Patterns	Generic Components: Build a Table component that takes a Generic T and stays 100% type-safe.	Pending
+13	Design Systems	WCAG + Tailwind: Build a system where "High Contrast" mode is a first-class citizen using CSS variables.	Pending
+14	Performance Audit	Turbopack Build: Run your first production build with Turbopack and analyze the bundle map.	Pending
+15	Vercel AI SDK 5	useChat: Implement a streaming chat with the new v5 "Data Parts" for rich metadata.	Pending
+16	Tool Calling	Function Execution: Give your AI a tool to "Check Order Status" from your actual MongoDB.	Pending
+17	RAG Pipeline	Vector DB: Use pgvector or Pinecone to feed your documentation into the AI context.	Pending
+18	Generative UI	Server-to-UI: Have the AI return a <WeatherCard /> or <Chart /> component instead of text.	Pending
+19	Token Management	Summarization: Implement a sliding window for chat history to keep costs low and context high.	Pending
+20	AI Accessibility	Aria-Live: Use aria-live="polite" to ensure screen readers announce streaming AI text correctly.	Pending
+21	Model Comparison	Claude vs GPT-4o: Test which model handles your specific Next.js 16 code patterns better.	Pending
+22	MCP Basics	DevTools MCP: Connect your local dev server to a Claude Desktop agent using the MCP protocol.	Pending
+23	Custom MCP Tools	Git Summarizer: Build an MCP tool that lets the AI read your commits to write a Daily Standup note.	Pending
+24	Multi-Agent Flow	Critic Agent: Agent 1 writes code, Agent 2 reviews it for bugs before the user sees it.	Pending
+25	Real-time Agents	Live Updates: Use WebSockets to let an AI "take over" the UI and guide a user through a flow.	Pending
+26	Vercel Deployment	Edge Functions: Deploy your AI routes to the Edge to minimize TTFB (Time to First Byte).	Pending
+27	Final Project Pt 1	Architecture: Draft the system diagram (Next.js, MongoDB, RAG, MCP).	Pending
+28	Final Project Pt 2	The Pitch: Build a fully functional, AI-powered product that solves a real-world frontend problem.	PendingDay	Task	Next.js 16 "Twist"	Status
+1	RSC Interleaving	Async Params: Fetch data in a layout by await-ing params. Pass that data to a Client Component.	Done
+2	Server Actions 2.0	updateTag: Use the new updateTag API to expire cache and "read-your-writes" in one request.	Pending
+3	useActionState	React 19 Stable: Use this for all form states. No more useState for loading/errors.	Pending
+4	Optimistic UI	useOptimistic: Implement a collaborative list where items appear before the DB acknowledges.	Pending
+5	Zod Validation	Typed Actions: Return structured errors from Actions and map them to fields using useActionState.	Pending
+6	Taint API	Security: Use taintObjectReference to block a User's secret API key from ever reaching the client.	Pending
+7	Review	React Compiler: Enable reactCompiler: true and audit how much useMemo you can delete.	Pending
+8	Partial Prerendering	cacheComponents: Enable the new unified flag in next.config.js to trigger PPR.	Pending
+9	Advanced Middleware	Proxy.ts: Note that middleware is often renamed/used as a Proxy in v16 for explicit boundaries.	Pending
+10	Streaming & Suspense	Nested Boundaries: Stream a slow AI-generated summary while the page shell is already interactive.	Pending
+11	Request Memoization	Deduplication: Use the v16 cache() function for non-fetch data (like DB calls) across the tree.	Pending
+12	Advanced TS Patterns	Generic Components: Build a Table component that takes a Generic T and stays 100% type-safe.	Pending
+13	Design Systems	WCAG + Tailwind: Build a system where "High Contrast" mode is a first-class citizen using CSS variables.	Pending
+14	Performance Audit	Turbopack Build: Run your first production build with Turbopack and analyze the bundle map.	Pending
+15	Vercel AI SDK 5	useChat: Implement a streaming chat with the new v5 "Data Parts" for rich metadata.	Pending
+16	Tool Calling	Function Execution: Give your AI a tool to "Check Order Status" from your actual MongoDB.	Pending
+17	RAG Pipeline	Vector DB: Use pgvector or Pinecone to feed your documentation into the AI context.	Pending
+18	Generative UI	Server-to-UI: Have the AI return a <WeatherCard /> or <Chart /> component instead of text.	Pending
+19	Token Management	Summarization: Implement a sliding window for chat history to keep costs low and context high.	Pending
+20	AI Accessibility	Aria-Live: Use aria-live="polite" to ensure screen readers announce streaming AI text correctly.	Pending
+21	Model Comparison	Claude vs GPT-4o: Test which model handles your specific Next.js 16 code patterns better.	Pending
+22	MCP Basics	DevTools MCP: Connect your local dev server to a Claude Desktop agent using the MCP protocol.	Pending
+23	Custom MCP Tools	Git Summarizer: Build an MCP tool that lets the AI read your commits to write a Daily Standup note.	Pending
+24	Multi-Agent Flow	Critic Agent: Agent 1 writes code, Agent 2 reviews it for bugs before the user sees it.	Pending
+25	Real-time Agents	Live Updates: Use WebSockets to let an AI "take over" the UI and guide a user through a flow.	Pending
+26	Vercel Deployment	Edge Functions: Deploy your AI routes to the Edge to minimize TTFB (Time to First Byte).	Pending
+27	Final Project Pt 1	Architecture: Draft the system diagram (Next.js, MongoDB, RAG, MCP).	Pending
+28	Final Project Pt 2	The Pitch: Build a fully functional, AI-powered product that solves a real-world frontend problem.	PendingDay	Task	Next.js 16 "Twist"	Status
+1	RSC Interleaving	Async Params: Fetch data in a layout by await-ing params. Pass that data to a Client Component.	Done
+2	Server Actions 2.0	updateTag: Use the new updateTag API to expire cache and "read-your-writes" in one request.	Pending
+3	useActionState	React 19 Stable: Use this for all form states. No more useState for loading/errors.	Pending
+4	Optimistic UI	useOptimistic: Implement a collaborative list where items appear before the DB acknowledges.	Pending
+5	Zod Validation	Typed Actions: Return structured errors from Actions and map them to fields using useActionState.	Pending
+6	Taint API	Security: Use taintObjectReference to block a User's secret API key from ever reaching the client.	Pending
+7	Review	React Compiler: Enable reactCompiler: true and audit how much useMemo you can delete.	Pending
+8	Partial Prerendering	cacheComponents: Enable the new unified flag in next.config.js to trigger PPR.	Pending
+9	Advanced Middleware	Proxy.ts: Note that middleware is often renamed/used as a Proxy in v16 for explicit boundaries.	Pending
+10	Streaming & Suspense	Nested Boundaries: Stream a slow AI-generated summary while the page shell is already interactive.	Pending
+11	Request Memoization	Deduplication: Use the v16 cache() function for non-fetch data (like DB calls) across the tree.	Pending
+12	Advanced TS Patterns	Generic Components: Build a Table component that takes a Generic T and stays 100% type-safe.	Pending
+13	Design Systems	WCAG + Tailwind: Build a system where "High Contrast" mode is a first-class citizen using CSS variables.	Pending
+14	Performance Audit	Turbopack Build: Run your first production build with Turbopack and analyze the bundle map.	Pending
+15	Vercel AI SDK 5	useChat: Implement a streaming chat with the new v5 "Data Parts" for rich metadata.	Pending
+16	Tool Calling	Function Execution: Give your AI a tool to "Check Order Status" from your actual MongoDB.	Pending
+17	RAG Pipeline	Vector DB: Use pgvector or Pinecone to feed your documentation into the AI context.	Pending
+18	Generative UI	Server-to-UI: Have the AI return a <WeatherCard /> or <Chart /> component instead of text.	Pending
+19	Token Management	Summarization: Implement a sliding window for chat history to keep costs low and context high.	Pending
+20	AI Accessibility	Aria-Live: Use aria-live="polite" to ensure screen readers announce streaming AI text correctly.	Pending
+21	Model Comparison	Claude vs GPT-4o: Test which model handles your specific Next.js 16 code patterns better.	Pending
+22	MCP Basics	DevTools MCP: Connect your local dev server to a Claude Desktop agent using the MCP protocol.	Pending
+23	Custom MCP Tools	Git Summarizer: Build an MCP tool that lets the AI read your commits to write a Daily Standup note.	Pending
+24	Multi-Agent Flow	Critic Agent: Agent 1 writes code, Agent 2 reviews it for bugs before the user sees it.	Pending
+25	Real-time Agents	Live Updates: Use WebSockets to let an AI "take over" the UI and guide a user through a flow.	Pending
+26	Vercel Deployment	Edge Functions: Deploy your AI routes to the Edge to minimize TTFB (Time to First Byte).	Pending
+27	Final Project Pt 1	Architecture: Draft the system diagram (Next.js, MongoDB, RAG, MCP).	Pending
+28	Final Project Pt 2	The Pitch: Build a fully functional, AI-powered product that solves a real-world frontend problem.	PendingDay	Task	Next.js 16 "Twist"	Status
+1	RSC Interleaving	Async Params: Fetch data in a layout by await-ing params. Pass that data to a Client Component.	Done
+2	Server Actions 2.0	updateTag: Use the new updateTag API to expire cache and "read-your-writes" in one request.	Pending
+3	useActionState	React 19 Stable: Use this for all form states. No more useState for loading/errors.	Pending
+4	Optimistic UI	useOptimistic: Implement a collaborative list where items appear before the DB acknowledges.	Pending
+5	Zod Validation	Typed Actions: Return structured errors from Actions and map them to fields using useActionState.	Pending
+6	Taint API	Security: Use taintObjectReference to block a User's secret API key from ever reaching the client.	Pending
+7	Review	React Compiler: Enable reactCompiler: true and audit how much useMemo you can delete.	Pending
+8	Partial Prerendering	cacheComponents: Enable the new unified flag in next.config.js to trigger PPR.	Pending
+9	Advanced Middleware	Proxy.ts: Note that middleware is often renamed/used as a Proxy in v16 for explicit boundaries.	Pending
+10	Streaming & Suspense	Nested Boundaries: Stream a slow AI-generated summary while the page shell is already interactive.	Pending
+11	Request Memoization	Deduplication: Use the v16 cache() function for non-fetch data (like DB calls) across the tree.	Pending
+12	Advanced TS Patterns	Generic Components: Build a Table component that takes a Generic T and stays 100% type-safe.	Pending
+13	Design Systems	WCAG + Tailwind: Build a system where "High Contrast" mode is a first-class citizen using CSS variables.	Pending
+14	Performance Audit	Turbopack Build: Run your first production build with Turbopack and analyze the bundle map.	Pending
+15	Vercel AI SDK 5	useChat: Implement a streaming chat with the new v5 "Data Parts" for rich metadata.	Pending
+16	Tool Calling	Function Execution: Give your AI a tool to "Check Order Status" from your actual MongoDB.	Pending
+17	RAG Pipeline	Vector DB: Use pgvector or Pinecone to feed your documentation into the AI context.	Pending
+18	Generative UI	Server-to-UI: Have the AI return a <WeatherCard /> or <Chart /> component instead of text.	Pending
+19	Token Management	Summarization: Implement a sliding window for chat history to keep costs low and context high.	Pending
+20	AI Accessibility	Aria-Live: Use aria-live="polite" to ensure screen readers announce streaming AI text correctly.	Pending
+21	Model Comparison	Claude vs GPT-4o: Test which model handles your specific Next.js 16 code patterns better.	Pending
+22	MCP Basics	DevTools MCP: Connect your local dev server to a Claude Desktop agent using the MCP protocol.	Pending
+23	Custom MCP Tools	Git Summarizer: Build an MCP tool that lets the AI read your commits to write a Daily Standup note.	Pending
+24	Multi-Agent Flow	Critic Agent: Agent 1 writes code, Agent 2 reviews it for bugs before the user sees it.	Pending
+25	Real-time Agents	Live Updates: Use WebSockets to let an AI "take over" the UI and guide a user through a flow.	Pending
+26	Vercel Deployment	Edge Functions: Deploy your AI routes to the Edge to minimize TTFB (Time to First Byte).	Pending
+27	Final Project Pt 1	Architecture: Draft the system diagram (Next.js, MongoDB, RAG, MCP).	Pending
+28	Final Project Pt 2	The Pitch: Build a fully functional, AI-powered product that solves a real-world frontend problem.	PendingDay	Task	Next.js 16 "Twist"	Status
+1	RSC Interleaving	Async Params: Fetch data in a layout by await-ing params. Pass that data to a Client Component.	Done
+2	Server Actions 2.0	updateTag: Use the new updateTag API to expire cache and "read-your-writes" in one request.	Pending
+3	useActionState	React 19 Stable: Use this for all form states. No more useState for loading/errors.	Pending
+4	Optimistic UI	useOptimistic: Implement a collaborative list where items appear before the DB acknowledges.	Pending
+5	Zod Validation	Typed Actions: Return structured errors from Actions and map them to fields using useActionState.	Pending
+6	Taint API	Security: Use taintObjectReference to block a User's secret API key from ever reaching the client.	Pending
+7	Review	React Compiler: Enable reactCompiler: true and audit how much useMemo you can delete.	Pending
+8	Partial Prerendering	cacheComponents: Enable the new unified flag in next.config.js to trigger PPR.	Pending
+9	Advanced Middleware	Proxy.ts: Note that middleware is often renamed/used as a Proxy in v16 for explicit boundaries.	Pending
+10	Streaming & Suspense	Nested Boundaries: Stream a slow AI-generated summary while the page shell is already interactive.	Pending
+11	Request Memoization	Deduplication: Use the v16 cache() function for non-fetch data (like DB calls) across the tree.	Pending
+12	Advanced TS Patterns	Generic Components: Build a Table component that takes a Generic T and stays 100% type-safe.	Pending
+13	Design Systems	WCAG + Tailwind: Build a system where "High Contrast" mode is a first-class citizen using CSS variables.	Pending
+14	Performance Audit	Turbopack Build: Run your first production build with Turbopack and analyze the bundle map.	Pending
+15	Vercel AI SDK 5	useChat: Implement a streaming chat with the new v5 "Data Parts" for rich metadata.	Pending
+16	Tool Calling	Function Execution: Give your AI a tool to "Check Order Status" from your actual MongoDB.	Pending
+17	RAG Pipeline	Vector DB: Use pgvector or Pinecone to feed your documentation into the AI context.	Pending
+18	Generative UI	Server-to-UI: Have the AI return a <WeatherCard /> or <Chart /> component instead of text.	Pending
+19	Token Management	Summarization: Implement a sliding window for chat history to keep costs low and context high.	Pending
+20	AI Accessibility	Aria-Live: Use aria-live="polite" to ensure screen readers announce streaming AI text correctly.	Pending
+21	Model Comparison	Claude vs GPT-4o: Test which model handles your specific Next.js 16 code patterns better.	Pending
+22	MCP Basics	DevTools MCP: Connect your local dev server to a Claude Desktop agent using the MCP protocol.	Pending
+23	Custom MCP Tools	Git Summarizer: Build an MCP tool that lets the AI read your commits to write a Daily Standup note.	Pending
+24	Multi-Agent Flow	Critic Agent: Agent 1 writes code, Agent 2 reviews it for bugs before the user sees it.	Pending
+25	Real-time Agents	Live Updates: Use WebSockets to let an AI "take over" the UI and guide a user through a flow.	Pending
+26	Vercel Deployment	Edge Functions: Deploy your AI routes to the Edge to minimize TTFB (Time to First Byte).	Pending
+27	Final Project Pt 1	Architecture: Draft the system diagram (Next.js, MongoDB, RAG, MCP).	Pending
+28	Final Project Pt 2	The Pitch: Build a fully functional, AI-powered product that solves a real-world frontend problem.	PendingDay	Task	Next.js 16 "Twist"	Status
+1	RSC Interleaving	Async Params: Fetch data in a layout by await-ing params. Pass that data to a Client Component.	Done
+2	Server Actions 2.0	updateTag: Use the new updateTag API to expire cache and "read-your-writes" in one request.	Pending
+3	useActionState	React 19 Stable: Use this for all form states. No more useState for loading/errors.	Pending
+4	Optimistic UI	useOptimistic: Implement a collaborative list where items appear before the DB acknowledges.	Pending
+5	Zod Validation	Typed Actions: Return structured errors from Actions and map them to fields using useActionState.	Pending
+6	Taint API	Security: Use taintObjectReference to block a User's secret API key from ever reaching the client.	Pending
+7	Review	React Compiler: Enable reactCompiler: true and audit how much useMemo you can delete.	Pending
+8	Partial Prerendering	cacheComponents: Enable the new unified flag in next.config.js to trigger PPR.	Pending
+9	Advanced Middleware	Proxy.ts: Note that middleware is often renamed/used as a Proxy in v16 for explicit boundaries.	Pending
+10	Streaming & Suspense	Nested Boundaries: Stream a slow AI-generated summary while the page shell is already interactive.	Pending
+11	Request Memoization	Deduplication: Use the v16 cache() function for non-fetch data (like DB calls) across the tree.	Pending
+12	Advanced TS Patterns	Generic Components: Build a Table component that takes a Generic T and stays 100% type-safe.	Pending
+13	Design Systems	WCAG + Tailwind: Build a system where "High Contrast" mode is a first-class citizen using CSS variables.	Pending
+14	Performance Audit	Turbopack Build: Run your first production build with Turbopack and analyze the bundle map.	Pending
+15	Vercel AI SDK 5	useChat: Implement a streaming chat with the new v5 "Data Parts" for rich metadata.	Pending
+16	Tool Calling	Function Execution: Give your AI a tool to "Check Order Status" from your actual MongoDB.	Pending
+17	RAG Pipeline	Vector DB: Use pgvector or Pinecone to feed your documentation into the AI context.	Pending
+18	Generative UI	Server-to-UI: Have the AI return a <WeatherCard /> or <Chart /> component instead of text.	Pending
+19	Token Management	Summarization: Implement a sliding window for chat history to keep costs low and context high.	Pending
+20	AI Accessibility	Aria-Live: Use aria-live="polite" to ensure screen readers announce streaming AI text correctly.	Pending
+21	Model Comparison	Claude vs GPT-4o: Test which model handles your specific Next.js 16 code patterns better.	Pending
+22	MCP Basics	DevTools MCP: Connect your local dev server to a Claude Desktop agent using the MCP protocol.	Pending
+23	Custom MCP Tools	Git Summarizer: Build an MCP tool that lets the AI read your commits to write a Daily Standup note.	Pending
+24	Multi-Agent Flow	Critic Agent: Agent 1 writes code, Agent 2 reviews it for bugs before the user sees it.	Pending
+25	Real-time Agents	Live Updates: Use WebSockets to let an AI "take over" the UI and guide a user through a flow.	Pending
+26	Vercel Deployment	Edge Functions: Deploy your AI routes to the Edge to minimize TTFB (Time to First Byte).	Pending
+27	Final Project Pt 1	Architecture: Draft the system diagram (Next.js, MongoDB, RAG, MCP).	Pending
+28	Final Project Pt 2	The Pitch: Build a fully functional, AI-powered product that solves a real-world frontend problem.	PendingDay	Task	Next.js 16 "Twist"	Status
+1	RSC Interleaving	Async Params: Fetch data in a layout by await-ing params. Pass that data to a Client Component.	Done
+2	Server Actions 2.0	updateTag: Use the new updateTag API to expire cache and "read-your-writes" in one request.	Pending
+3	useActionState	React 19 Stable: Use this for all form states. No more useState for loading/errors.	Pending
+4	Optimistic UI	useOptimistic: Implement a collaborative list where items appear before the DB acknowledges.	Pending
+5	Zod Validation	Typed Actions: Return structured errors from Actions and map them to fields using useActionState.	Pending
+6	Taint API	Security: Use taintObjectReference to block a User's secret API key from ever reaching the client.	Pending
+7	Review	React Compiler: Enable reactCompiler: true and audit how much useMemo you can delete.	Pending
+8	Partial Prerendering	cacheComponents: Enable the new unified flag in next.config.js to trigger PPR.	Pending
+9	Advanced Middleware	Proxy.ts: Note that middleware is often renamed/used as a Proxy in v16 for explicit boundaries.	Pending
+10	Streaming & Suspense	Nested Boundaries: Stream a slow AI-generated summary while the page shell is already interactive.	Pending
+11	Request Memoization	Deduplication: Use the v16 cache() function for non-fetch data (like DB calls) across the tree.	Pending
+12	Advanced TS Patterns	Generic Components: Build a Table component that takes a Generic T and stays 100% type-safe.	Pending
+13	Design Systems	WCAG + Tailwind: Build a system where "High Contrast" mode is a first-class citizen using CSS variables.	Pending
+14	Performance Audit	Turbopack Build: Run your first production build with Turbopack and analyze the bundle map.	Pending
+15	Vercel AI SDK 5	useChat: Implement a streaming chat with the new v5 "Data Parts" for rich metadata.	Pending
+16	Tool Calling	Function Execution: Give your AI a tool to "Check Order Status" from your actual MongoDB.	Pending
+17	RAG Pipeline	Vector DB: Use pgvector or Pinecone to feed your documentation into the AI context.	Pending
+18	Generative UI	Server-to-UI: Have the AI return a <WeatherCard /> or <Chart /> component instead of text.	Pending
+19	Token Management	Summarization: Implement a sliding window for chat history to keep costs low and context high.	Pending
+20	AI Accessibility	Aria-Live: Use aria-live="polite" to ensure screen readers announce streaming AI text correctly.	Pending
+21	Model Comparison	Claude vs GPT-4o: Test which model handles your specific Next.js 16 code patterns better.	Pending
+22	MCP Basics	DevTools MCP: Connect your local dev server to a Claude Desktop agent using the MCP protocol.	Pending
+23	Custom MCP Tools	Git Summarizer: Build an MCP tool that lets the AI read your commits to write a Daily Standup note.	Pending
+24	Multi-Agent Flow	Critic Agent: Agent 1 writes code, Agent 2 reviews it for bugs before the user sees it.	Pending
+25	Real-time Agents	Live Updates: Use WebSockets to let an AI "take over" the UI and guide a user through a flow.	Pending
+26	Vercel Deployment	Edge Functions: Deploy your AI routes to the Edge to minimize TTFB (Time to First Byte).	Pending
+27	Final Project Pt 1	Architecture: Draft the system diagram (Next.js, MongoDB, RAG, MCP).	Pending
+28	Final Project Pt 2	The Pitch: Build a fully functional, AI-powered product that solves a real-world frontend problem.	PendingDay	Task	Next.js 16 "Twist"	Status
+1	RSC Interleaving	Async Params: Fetch data in a layout by await-ing params. Pass that data to a Client Component.	Done
+2	Server Actions 2.0	updateTag: Use the new updateTag API to expire cache and "read-your-writes" in one request.	Pending
+3	useActionState	React 19 Stable: Use this for all form states. No more useState for loading/errors.	Pending
+4	Optimistic UI	useOptimistic: Implement a collaborative list where items appear before the DB acknowledges.	Pending
+5	Zod Validation	Typed Actions: Return structured errors from Actions and map them to fields using useActionState.	Pending
+6	Taint API	Security: Use taintObjectReference to block a User's secret API key from ever reaching the client.	Pending
+7	Review	React Compiler: Enable reactCompiler: true and audit how much useMemo you can delete.	Pending
+8	Partial Prerendering	cacheComponents: Enable the new unified flag in next.config.js to trigger PPR.	Pending
+9	Advanced Middleware	Proxy.ts: Note that middleware is often renamed/used as a Proxy in v16 for explicit boundaries.	Pending
+10	Streaming & Suspense	Nested Boundaries: Stream a slow AI-generated summary while the page shell is already interactive.	Pending
+11	Request Memoization	Deduplication: Use the v16 cache() function for non-fetch data (like DB calls) across the tree.	Pending
+12	Advanced TS Patterns	Generic Components: Build a Table component that takes a Generic T and stays 100% type-safe.	Pending
+13	Design Systems	WCAG + Tailwind: Build a system where "High Contrast" mode is a first-class citizen using CSS variables.	Pending
+14	Performance Audit	Turbopack Build: Run your first production build with Turbopack and analyze the bundle map.	Pending
+15	Vercel AI SDK 5	useChat: Implement a streaming chat with the new v5 "Data Parts" for rich metadata.	Pending
+16	Tool Calling	Function Execution: Give your AI a tool to "Check Order Status" from your actual MongoDB.	Pending
+17	RAG Pipeline	Vector DB: Use pgvector or Pinecone to feed your documentation into the AI context.	Pending
+18	Generative UI	Server-to-UI: Have the AI return a <WeatherCard /> or <Chart /> component instead of text.	Pending
+19	Token Management	Summarization: Implement a sliding window for chat history to keep costs low and context high.	Pending
+20	AI Accessibility	Aria-Live: Use aria-live="polite" to ensure screen readers announce streaming AI text correctly.	Pending
+21	Model Comparison	Claude vs GPT-4o: Test which model handles your specific Next.js 16 code patterns better.	Pending
+22	MCP Basics	DevTools MCP: Connect your local dev server to a Claude Desktop agent using the MCP protocol.	Pending
+23	Custom MCP Tools	Git Summarizer: Build an MCP tool that lets the AI read your commits to write a Daily Standup note.	Pending
+24	Multi-Agent Flow	Critic Agent: Agent 1 writes code, Agent 2 reviews it for bugs before the user sees it.	Pending
+25	Real-time Agents	Live Updates: Use WebSockets to let an AI "take over" the UI and guide a user through a flow.	Pending
+26	Vercel Deployment	Edge Functions: Deploy your AI routes to the Edge to minimize TTFB (Time to First Byte).	Pending
+27	Final Project Pt 1	Architecture: Draft the system diagram (Next.js, MongoDB, RAG, MCP).	Pending
+28	Final Project Pt 2	The Pitch: Build a fully functional, AI-powered product that solves a real-world frontend problem.	PendingDay	Task	Next.js 16 "Twist"	Status
+1	RSC Interleaving	Async Params: Fetch data in a layout by await-ing params. Pass that data to a Client Component.	Done
+2	Server Actions 2.0	updateTag: Use the new updateTag API to expire cache and "read-your-writes" in one request.	Pending
+3	useActionState	React 19 Stable: Use this for all form states. No more useState for loading/errors.	Pending
+4	Optimistic UI	useOptimistic: Implement a collaborative list where items appear before the DB acknowledges.	Pending
+5	Zod Validation	Typed Actions: Return structured errors from Actions and map them to fields using useActionState.	Pending
+6	Taint API	Security: Use taintObjectReference to block a User's secret API key from ever reaching the client.	Pending
+7	Review	React Compiler: Enable reactCompiler: true and audit how much useMemo you can delete.	Pending
+8	Partial Prerendering	cacheComponents: Enable the new unified flag in next.config.js to trigger PPR.	Pending
+9	Advanced Middleware	Proxy.ts: Note that middleware is often renamed/used as a Proxy in v16 for explicit boundaries.	Pending
+10	Streaming & Suspense	Nested Boundaries: Stream a slow AI-generated summary while the page shell is already interactive.	Pending
+11	Request Memoization	Deduplication: Use the v16 cache() function for non-fetch data (like DB calls) across the tree.	Pending
+12	Advanced TS Patterns	Generic Components: Build a Table component that takes a Generic T and stays 100% type-safe.	Pending
+13	Design Systems	WCAG + Tailwind: Build a system where "High Contrast" mode is a first-class citizen using CSS variables.	Pending
+14	Performance Audit	Turbopack Build: Run your first production build with Turbopack and analyze the bundle map.	Pending
+15	Vercel AI SDK 5	useChat: Implement a streaming chat with the new v5 "Data Parts" for rich metadata.	Pending
+16	Tool Calling	Function Execution: Give your AI a tool to "Check Order Status" from your actual MongoDB.	Pending
+17	RAG Pipeline	Vector DB: Use pgvector or Pinecone to feed your documentation into the AI context.	Pending
+18	Generative UI	Server-to-UI: Have the AI return a <WeatherCard /> or <Chart /> component instead of text.	Pending
+19	Token Management	Summarization: Implement a sliding window for chat history to keep costs low and context high.	Pending
+20	AI Accessibility	Aria-Live: Use aria-live="polite" to ensure screen readers announce streaming AI text correctly.	Pending
+21	Model Comparison	Claude vs GPT-4o: Test which model handles your specific Next.js 16 code patterns better.	Pending
+22	MCP Basics	DevTools MCP: Connect your local dev server to a Claude Desktop agent using the MCP protocol.	Pending
+23	Custom MCP Tools	Git Summarizer: Build an MCP tool that lets the AI read your commits to write a Daily Standup note.	Pending
+24	Multi-Agent Flow	Critic Agent: Agent 1 writes code, Agent 2 reviews it for bugs before the user sees it.	Pending
+25	Real-time Agents	Live Updates: Use WebSockets to let an AI "take over" the UI and guide a user through a flow.	Pending
+26	Vercel Deployment	Edge Functions: Deploy your AI routes to the Edge to minimize TTFB (Time to First Byte).	Pending
+27	Final Project Pt 1	Architecture: Draft the system diagram (Next.js, MongoDB, RAG, MCP).	Pending
+28	Final Project Pt 2	The Pitch: Build a fully functional, AI-powered product that solves a real-world frontend problem.	PendingDay	Task	Next.js 16 "Twist"	Status
+1	RSC Interleaving	Async Params: Fetch data in a layout by await-ing params. Pass that data to a Client Component.	Done
+2	Server Actions 2.0	updateTag: Use the new updateTag API to expire cache and "read-your-writes" in one request.	Pending
+3	useActionState	React 19 Stable: Use this for all form states. No more useState for loading/errors.	Pending
+4	Optimistic UI	useOptimistic: Implement a collaborative list where items appear before the DB acknowledges.	Pending
+5	Zod Validation	Typed Actions: Return structured errors from Actions and map them to fields using useActionState.	Pending
+6	Taint API	Security: Use taintObjectReference to block a User's secret API key from ever reaching the client.	Pending
+7	Review	React Compiler: Enable reactCompiler: true and audit how much useMemo you can delete.	Pending
+8	Partial Prerendering	cacheComponents: Enable the new unified flag in next.config.js to trigger PPR.	Pending
+9	Advanced Middleware	Proxy.ts: Note that middleware is often renamed/used as a Proxy in v16 for explicit boundaries.	Pending
+10	Streaming & Suspense	Nested Boundaries: Stream a slow AI-generated summary while the page shell is already interactive.	Pending
+11	Request Memoization	Deduplication: Use the v16 cache() function for non-fetch data (like DB calls) across the tree.	Pending
+12	Advanced TS Patterns	Generic Components: Build a Table component that takes a Generic T and stays 100% type-safe.	Pending
+13	Design Systems	WCAG + Tailwind: Build a system where "High Contrast" mode is a first-class citizen using CSS variables.	Pending
+14	Performance Audit	Turbopack Build: Run your first production build with Turbopack and analyze the bundle map.	Pending
+15	Vercel AI SDK 5	useChat: Implement a streaming chat with the new v5 "Data Parts" for rich metadata.	Pending
+16	Tool Calling	Function Execution: Give your AI a tool to "Check Order Status" from your actual MongoDB.	Pending
+17	RAG Pipeline	Vector DB: Use pgvector or Pinecone to feed your documentation into the AI context.	Pending
+18	Generative UI	Server-to-UI: Have the AI return a <WeatherCard /> or <Chart /> component instead of text.	Pending
+19	Token Management	Summarization: Implement a sliding window for chat history to keep costs low and context high.	Pending
+20	AI Accessibility	Aria-Live: Use aria-live="polite" to ensure screen readers announce streaming AI text correctly.	Pending
+21	Model Comparison	Claude vs GPT-4o: Test which model handles your specific Next.js 16 code patterns better.	Pending
+22	MCP Basics	DevTools MCP: Connect your local dev server to a Claude Desktop agent using the MCP protocol.	Pending
+23	Custom MCP Tools	Git Summarizer: Build an MCP tool that lets the AI read your commits to write a Daily Standup note.	Pending
+24	Multi-Agent Flow	Critic Agent: Agent 1 writes code, Agent 2 reviews it for bugs before the user sees it.	Pending
+25	Real-time Agents	Live Updates: Use WebSockets to let an AI "take over" the UI and guide a user through a flow.	Pending
+26	Vercel Deployment	Edge Functions: Deploy your AI routes to the Edge to minimize TTFB (Time to First Byte).	Pending
+27	Final Project Pt 1	Architecture: Draft the system diagram (Next.js, MongoDB, RAG, MCP).	Pending
+28	Final Project Pt 2	The Pitch: Build a fully functional, AI-powered product that solves a real-world frontend problem.	PendingDay	Task	Next.js 16 "Twist"	Status
+1	RSC Interleaving	Async Params: Fetch data in a layout by await-ing params. Pass that data to a Client Component.	Done
+2	Server Actions 2.0	updateTag: Use the new updateTag API to expire cache and "read-your-writes" in one request.	Pending
+3	useActionState	React 19 Stable: Use this for all form states. No more useState for loading/errors.	Pending
+4	Optimistic UI	useOptimistic: Implement a collaborative list where items appear before the DB acknowledges.	Pending
+5	Zod Validation	Typed Actions: Return structured errors from Actions and map them to fields using useActionState.	Pending
+6	Taint API	Security: Use taintObjectReference to block a User's secret API key from ever reaching the client.	Pending
+7	Review	React Compiler: Enable reactCompiler: true and audit how much useMemo you can delete.	Pending
+8	Partial Prerendering	cacheComponents: Enable the new unified flag in next.config.js to trigger PPR.	Pending
+9	Advanced Middleware	Proxy.ts: Note that middleware is often renamed/used as a Proxy in v16 for explicit boundaries.	Pending
+10	Streaming & Suspense	Nested Boundaries: Stream a slow AI-generated summary while the page shell is already interactive.	Pending
+11	Request Memoization	Deduplication: Use the v16 cache() function for non-fetch data (like DB calls) across the tree.	Pending
+12	Advanced TS Patterns	Generic Components: Build a Table component that takes a Generic T and stays 100% type-safe.	Pending
+13	Design Systems	WCAG + Tailwind: Build a system where "High Contrast" mode is a first-class citizen using CSS variables.	Pending
+14	Performance Audit	Turbopack Build: Run your first production build with Turbopack and analyze the bundle map.	Pending
+15	Vercel AI SDK 5	useChat: Implement a streaming chat with the new v5 "Data Parts" for rich metadata.	Pending
+16	Tool Calling	Function Execution: Give your AI a tool to "Check Order Status" from your actual MongoDB.	Pending
+17	RAG Pipeline	Vector DB: Use pgvector or Pinecone to feed your documentation into the AI context.	Pending
+18	Generative UI	Server-to-UI: Have the AI return a <WeatherCard /> or <Chart /> component instead of text.	Pending
+19	Token Management	Summarization: Implement a sliding window for chat history to keep costs low and context high.	Pending
+20	AI Accessibility	Aria-Live: Use aria-live="polite" to ensure screen readers announce streaming AI text correctly.	Pending
+21	Model Comparison	Claude vs GPT-4o: Test which model handles your specific Next.js 16 code patterns better.	Pending
+22	MCP Basics	DevTools MCP: Connect your local dev server to a Claude Desktop agent using the MCP protocol.	Pending
+23	Custom MCP Tools	Git Summarizer: Build an MCP tool that lets the AI read your commits to write a Daily Standup note.	Pending
+24	Multi-Agent Flow	Critic Agent: Agent 1 writes code, Agent 2 reviews it for bugs before the user sees it.	Pending
+25	Real-time Agents	Live Updates: Use WebSockets to let an AI "take over" the UI and guide a user through a flow.	Pending
+26	Vercel Deployment	Edge Functions: Deploy your AI routes to the Edge to minimize TTFB (Time to First Byte).	Pending
+27	Final Project Pt 1	Architecture: Draft the system diagram (Next.js, MongoDB, RAG, MCP).	Pending
+28	Final Project Pt 2	The Pitch: Build a fully functional, AI-powered product that solves a real-world frontend problem.	PendingDay	Task	Next.js 16 "Twist"	Status
+1	RSC Interleaving	Async Params: Fetch data in a layout by await-ing params. Pass that data to a Client Component.	Done
+2	Server Actions 2.0	updateTag: Use the new updateTag API to expire cache and "read-your-writes" in one request.	Pending
+3	useActionState	React 19 Stable: Use this for all form states. No more useState for loading/errors.	Pending
+4	Optimistic UI	useOptimistic: Implement a collaborative list where items appear before the DB acknowledges.	Pending
+5	Zod Validation	Typed Actions: Return structured errors from Actions and map them to fields using useActionState.	Pending
+6	Taint API	Security: Use taintObjectReference to block a User's secret API key from ever reaching the client.	Pending
+7	Review	React Compiler: Enable reactCompiler: true and audit how much useMemo you can delete.	Pending
+8	Partial Prerendering	cacheComponents: Enable the new unified flag in next.config.js to trigger PPR.	Pending
+9	Advanced Middleware	Proxy.ts: Note that middleware is often renamed/used as a Proxy in v16 for explicit boundaries.	Pending
+10	Streaming & Suspense	Nested Boundaries: Stream a slow AI-generated summary while the page shell is already interactive.	Pending
+11	Request Memoization	Deduplication: Use the v16 cache() function for non-fetch data (like DB calls) across the tree.	Pending
+12	Advanced TS Patterns	Generic Components: Build a Table component that takes a Generic T and stays 100% type-safe.	Pending
+13	Design Systems	WCAG + Tailwind: Build a system where "High Contrast" mode is a first-class citizen using CSS variables.	Pending
+14	Performance Audit	Turbopack Build: Run your first production build with Turbopack and analyze the bundle map.	Pending
+15	Vercel AI SDK 5	useChat: Implement a streaming chat with the new v5 "Data Parts" for rich metadata.	Pending
+16	Tool Calling	Function Execution: Give your AI a tool to "Check Order Status" from your actual MongoDB.	Pending
+17	RAG Pipeline	Vector DB: Use pgvector or Pinecone to feed your documentation into the AI context.	Pending
+18	Generative UI	Server-to-UI: Have the AI return a <WeatherCard /> or <Chart /> component instead of text.	Pending
+19	Token Management	Summarization: Implement a sliding window for chat history to keep costs low and context high.	Pending
+20	AI Accessibility	Aria-Live: Use aria-live="polite" to ensure screen readers announce streaming AI text correctly.	Pending
+21	Model Comparison	Claude vs GPT-4o: Test which model handles your specific Next.js 16 code patterns better.	Pending
+22	MCP Basics	DevTools MCP: Connect your local dev server to a Claude Desktop agent using the MCP protocol.	Pending
+23	Custom MCP Tools	Git Summarizer: Build an MCP tool that lets the AI read your commits to write a Daily Standup note.	Pending
+24	Multi-Agent Flow	Critic Agent: Agent 1 writes code, Agent 2 reviews it for bugs before the user sees it.	Pending
+25	Real-time Agents	Live Updates: Use WebSockets to let an AI "take over" the UI and guide a user through a flow.	Pending
+26	Vercel Deployment	Edge Functions: Deploy your AI routes to the Edge to minimize TTFB (Time to First Byte).	Pending
+27	Final Project Pt 1	Architecture: Draft the system diagram (Next.js, MongoDB, RAG, MCP).	Pending
+28	Final Project Pt 2	The Pitch: Build a fully functional, AI-powered product that solves a real-world frontend problem.	PendingDay	Task	Next.js 16 "Twist"	Status
+1	RSC Interleaving	Async Params: Fetch data in a layout by await-ing params. Pass that data to a Client Component.	Done
+2	Server Actions 2.0	updateTag: Use the new updateTag API to expire cache and "read-your-writes" in one request.	Pending
+3	useActionState	React 19 Stable: Use this for all form states. No more useState for loading/errors.	Pending
+4	Optimistic UI	useOptimistic: Implement a collaborative list where items appear before the DB acknowledges.	Pending
+5	Zod Validation	Typed Actions: Return structured errors from Actions and map them to fields using useActionState.	Pending
+6	Taint API	Security: Use taintObjectReference to block a User's secret API key from ever reaching the client.	Pending
+7	Review	React Compiler: Enable reactCompiler: true and audit how much useMemo you can delete.	Pending
+8	Partial Prerendering	cacheComponents: Enable the new unified flag in next.config.js to trigger PPR.	Pending
+9	Advanced Middleware	Proxy.ts: Note that middleware is often renamed/used as a Proxy in v16 for explicit boundaries.	Pending
+10	Streaming & Suspense	Nested Boundaries: Stream a slow AI-generated summary while the page shell is already interactive.	Pending
+11	Request Memoization	Deduplication: Use the v16 cache() function for non-fetch data (like DB calls) across the tree.	Pending
+12	Advanced TS Patterns	Generic Components: Build a Table component that takes a Generic T and stays 100% type-safe.	Pending
+13	Design Systems	WCAG + Tailwind: Build a system where "High Contrast" mode is a first-class citizen using CSS variables.	Pending
+14	Performance Audit	Turbopack Build: Run your first production build with Turbopack and analyze the bundle map.	Pending
+15	Vercel AI SDK 5	useChat: Implement a streaming chat with the new v5 "Data Parts" for rich metadata.	Pending
+16	Tool Calling	Function Execution: Give your AI a tool to "Check Order Status" from your actual MongoDB.	Pending
+17	RAG Pipeline	Vector DB: Use pgvector or Pinecone to feed your documentation into the AI context.	Pending
+18	Generative UI	Server-to-UI: Have the AI return a <WeatherCard /> or <Chart /> component instead of text.	Pending
+19	Token Management	Summarization: Implement a sliding window for chat history to keep costs low and context high.	Pending
+20	AI Accessibility	Aria-Live: Use aria-live="polite" to ensure screen readers announce streaming AI text correctly.	Pending
+21	Model Comparison	Claude vs GPT-4o: Test which model handles your specific Next.js 16 code patterns better.	Pending
+22	MCP Basics	DevTools MCP: Connect your local dev server to a Claude Desktop agent using the MCP protocol.	Pending
+23	Custom MCP Tools	Git Summarizer: Build an MCP tool that lets the AI read your commits to write a Daily Standup note.	Pending
+24	Multi-Agent Flow	Critic Agent: Agent 1 writes code, Agent 2 reviews it for bugs before the user sees it.	Pending
+25	Real-time Agents	Live Updates: Use WebSockets to let an AI "take over" the UI and guide a user through a flow.	Pending
+26	Vercel Deployment	Edge Functions: Deploy your AI routes to the Edge to minimize TTFB (Time to First Byte).	Pending
+27	Final Project Pt 1	Architecture: Draft the system diagram (Next.js, MongoDB, RAG, MCP).	Pending
+28	Final Project Pt 2	The Pitch: Build a fully functional, AI-powered product that solves a real-world frontend problem.	PendingDay	Task	Next.js 16 "Twist"	Status
+1	RSC Interleaving	Async Params: Fetch data in a layout by await-ing params. Pass that data to a Client Component.	Done
+2	Server Actions 2.0	updateTag: Use the new updateTag API to expire cache and "read-your-writes" in one request.	Pending
+3	useActionState	React 19 Stable: Use this for all form states. No more useState for loading/errors.	Pending
+4	Optimistic UI	useOptimistic: Implement a collaborative list where items appear before the DB acknowledges.	Pending
+5	Zod Validation	Typed Actions: Return structured errors from Actions and map them to fields using useActionState.	Pending
+6	Taint API	Security: Use taintObjectReference to block a User's secret API key from ever reaching the client.	Pending
+7	Review	React Compiler: Enable reactCompiler: true and audit how much useMemo you can delete.	Pending
+8	Partial Prerendering	cacheComponents: Enable the new unified flag in next.config.js to trigger PPR.	Pending
+9	Advanced Middleware	Proxy.ts: Note that middleware is often renamed/used as a Proxy in v16 for explicit boundaries.	Pending
+10	Streaming & Suspense	Nested Boundaries: Stream a slow AI-generated summary while the page shell is already interactive.	Pending
+11	Request Memoization	Deduplication: Use the v16 cache() function for non-fetch data (like DB calls) across the tree.	Pending
+12	Advanced TS Patterns	Generic Components: Build a Table component that takes a Generic T and stays 100% type-safe.	Pending
+13	Design Systems	WCAG + Tailwind: Build a system where "High Contrast" mode is a first-class citizen using CSS variables.	Pending
+14	Performance Audit	Turbopack Build: Run your first production build with Turbopack and analyze the bundle map.	Pending
+15	Vercel AI SDK 5	useChat: Implement a streaming chat with the new v5 "Data Parts" for rich metadata.	Pending
+16	Tool Calling	Function Execution: Give your AI a tool to "Check Order Status" from your actual MongoDB.	Pending
+17	RAG Pipeline	Vector DB: Use pgvector or Pinecone to feed your documentation into the AI context.	Pending
+18	Generative UI	Server-to-UI: Have the AI return a <WeatherCard /> or <Chart /> component instead of text.	Pending
+19	Token Management	Summarization: Implement a sliding window for chat history to keep costs low and context high.	Pending
+20	AI Accessibility	Aria-Live: Use aria-live="polite" to ensure screen readers announce streaming AI text correctly.	Pending
+21	Model Comparison	Claude vs GPT-4o: Test which model handles your specific Next.js 16 code patterns better.	Pending
+22	MCP Basics	DevTools MCP: Connect your local dev server to a Claude Desktop agent using the MCP protocol.	Pending
+23	Custom MCP Tools	Git Summarizer: Build an MCP tool that lets the AI read your commits to write a Daily Standup note.	Pending
+24	Multi-Agent Flow	Critic Agent: Agent 1 writes code, Agent 2 reviews it for bugs before the user sees it.	Pending
+25	Real-time Agents	Live Updates: Use WebSockets to let an AI "take over" the UI and guide a user through a flow.	Pending
+26	Vercel Deployment	Edge Functions: Deploy your AI routes to the Edge to minimize TTFB (Time to First Byte).	Pending
+27	Final Project Pt 1	Architecture: Draft the system diagram (Next.js, MongoDB, RAG, MCP).	Pending
+28	Final Project Pt 2	The Pitch: Build a fully functional, AI-powered product that solves a real-world frontend problem.	PendingDay	Task	Next.js 16 "Twist"	Status
+1	RSC Interleaving	Async Params: Fetch data in a layout by await-ing params. Pass that data to a Client Component.	Done
+2	Server Actions 2.0	updateTag: Use the new updateTag API to expire cache and "read-your-writes" in one request.	Pending
+3	useActionState	React 19 Stable: Use this for all form states. No more useState for loading/errors.	Pending
+4	Optimistic UI	useOptimistic: Implement a collaborative list where items appear before the DB acknowledges.	Pending
+5	Zod Validation	Typed Actions: Return structured errors from Actions and map them to fields using useActionState.	Pending
+6	Taint API	Security: Use taintObjectReference to block a User's secret API key from ever reaching the client.	Pending
+7	Review	React Compiler: Enable reactCompiler: true and audit how much useMemo you can delete.	Pending
+8	Partial Prerendering	cacheComponents: Enable the new unified flag in next.config.js to trigger PPR.	Pending
+9	Advanced Middleware	Proxy.ts: Note that middleware is often renamed/used as a Proxy in v16 for explicit boundaries.	Pending
+10	Streaming & Suspense	Nested Boundaries: Stream a slow AI-generated summary while the page shell is already interactive.	Pending
+11	Request Memoization	Deduplication: Use the v16 cache() function for non-fetch data (like DB calls) across the tree.	Pending
+12	Advanced TS Patterns	Generic Components: Build a Table component that takes a Generic T and stays 100% type-safe.	Pending
+13	Design Systems	WCAG + Tailwind: Build a system where "High Contrast" mode is a first-class citizen using CSS variables.	Pending
+14	Performance Audit	Turbopack Build: Run your first production build with Turbopack and analyze the bundle map.	Pending
+15	Vercel AI SDK 5	useChat: Implement a streaming chat with the new v5 "Data Parts" for rich metadata.	Pending
+16	Tool Calling	Function Execution: Give your AI a tool to "Check Order Status" from your actual MongoDB.	Pending
+17	RAG Pipeline	Vector DB: Use pgvector or Pinecone to feed your documentation into the AI context.	Pending
+18	Generative UI	Server-to-UI: Have the AI return a <WeatherCard /> or <Chart /> component instead of text.	Pending
+19	Token Management	Summarization: Implement a sliding window for chat history to keep costs low and context high.	Pending
+20	AI Accessibility	Aria-Live: Use aria-live="polite" to ensure screen readers announce streaming AI text correctly.	Pending
+21	Model Comparison	Claude vs GPT-4o: Test which model handles your specific Next.js 16 code patterns better.	Pending
+22	MCP Basics	DevTools MCP: Connect your local dev server to a Claude Desktop agent using the MCP protocol.	Pending
+23	Custom MCP Tools	Git Summarizer: Build an MCP tool that lets the AI read your commits to write a Daily Standup note.	Pending
+24	Multi-Agent Flow	Critic Agent: Agent 1 writes code, Agent 2 reviews it for bugs before the user sees it.	Pending
+25	Real-time Agents	Live Updates: Use WebSockets to let an AI "take over" the UI and guide a user through a flow.	Pending
+26	Vercel Deployment	Edge Functions: Deploy your AI routes to the Edge to minimize TTFB (Time to First Byte).	Pending
+27	Final Project Pt 1	Architecture: Draft the system diagram (Next.js, MongoDB, RAG, MCP).	Pending
+28	Final Project Pt 2	The Pitch: Build a fully functional, AI-powered product that solves a real-world frontend problem.	PendingDay	Task	Next.js 16 "Twist"	Status
+1	RSC Interleaving	Async Params: Fetch data in a layout by await-ing params. Pass that data to a Client Component.	Done
+2	Server Actions 2.0	updateTag: Use the new updateTag API to expire cache and "read-your-writes" in one request.	Pending
+3	useActionState	React 19 Stable: Use this for all form states. No more useState for loading/errors.	Pending
+4	Optimistic UI	useOptimistic: Implement a collaborative list where items appear before the DB acknowledges.	Pending
+5	Zod Validation	Typed Actions: Return structured errors from Actions and map them to fields using useActionState.	Pending
+6	Taint API	Security: Use taintObjectReference to block a User's secret API key from ever reaching the client.	Pending
+7	Review	React Compiler: Enable reactCompiler: true and audit how much useMemo you can delete.	Pending
+8	Partial Prerendering	cacheComponents: Enable the new unified flag in next.config.js to trigger PPR.	Pending
+9	Advanced Middleware	Proxy.ts: Note that middleware is often renamed/used as a Proxy in v16 for explicit boundaries.	Pending
+10	Streaming & Suspense	Nested Boundaries: Stream a slow AI-generated summary while the page shell is already interactive.	Pending
+11	Request Memoization	Deduplication: Use the v16 cache() function for non-fetch data (like DB calls) across the tree.	Pending
+12	Advanced TS Patterns	Generic Components: Build a Table component that takes a Generic T and stays 100% type-safe.	Pending
+13	Design Systems	WCAG + Tailwind: Build a system where "High Contrast" mode is a first-class citizen using CSS variables.	Pending
+14	Performance Audit	Turbopack Build: Run your first production build with Turbopack and analyze the bundle map.	Pending
+15	Vercel AI SDK 5	useChat: Implement a streaming chat with the new v5 "Data Parts" for rich metadata.	Pending
+16	Tool Calling	Function Execution: Give your AI a tool to "Check Order Status" from your actual MongoDB.	Pending
+17	RAG Pipeline	Vector DB: Use pgvector or Pinecone to feed your documentation into the AI context.	Pending
+18	Generative UI	Server-to-UI: Have the AI return a <WeatherCard /> or <Chart /> component instead of text.	Pending
+19	Token Management	Summarization: Implement a sliding window for chat history to keep costs low and context high.	Pending
+20	AI Accessibility	Aria-Live: Use aria-live="polite" to ensure screen readers announce streaming AI text correctly.	Pending
+21	Model Comparison	Claude vs GPT-4o: Test which model handles your specific Next.js 16 code patterns better.	Pending
+22	MCP Basics	DevTools MCP: Connect your local dev server to a Claude Desktop agent using the MCP protocol.	Pending
+23	Custom MCP Tools	Git Summarizer: Build an MCP tool that lets the AI read your commits to write a Daily Standup note.	Pending
+24	Multi-Agent Flow	Critic Agent: Agent 1 writes code, Agent 2 reviews it for bugs before the user sees it.	Pending
+25	Real-time Agents	Live Updates: Use WebSockets to let an AI "take over" the UI and guide a user through a flow.	Pending
+26	Vercel Deployment	Edge Functions: Deploy your AI routes to the Edge to minimize TTFB (Time to First Byte).	Pending
+27	Final Project Pt 1	Architecture: Draft the system diagram (Next.js, MongoDB, RAG, MCP).	Pending
+28	Final Project Pt 2	The Pitch: Build a fully functional, AI-powered product that solves a real-world frontend problem.	PendingDay	Task	Next.js 16 "Twist"	Status
+1	RSC Interleaving	Async Params: Fetch data in a layout by await-ing params. Pass that data to a Client Component.	Done
+2	Server Actions 2.0	updateTag: Use the new updateTag API to expire cache and "read-your-writes" in one request.	Pending
+3	useActionState	React 19 Stable: Use this for all form states. No more useState for loading/errors.	Pending
+4	Optimistic UI	useOptimistic: Implement a collaborative list where items appear before the DB acknowledges.	Pending
+5	Zod Validation	Typed Actions: Return structured errors from Actions and map them to fields using useActionState.	Pending
+6	Taint API	Security: Use taintObjectReference to block a User's secret API key from ever reaching the client.	Pending
+7	Review	React Compiler: Enable reactCompiler: true and audit how much useMemo you can delete.	Pending
+8	Partial Prerendering	cacheComponents: Enable the new unified flag in next.config.js to trigger PPR.	Pending
+9	Advanced Middleware	Proxy.ts: Note that middleware is often renamed/used as a Proxy in v16 for explicit boundaries.	Pending
+10	Streaming & Suspense	Nested Boundaries: Stream a slow AI-generated summary while the page shell is already interactive.	Pending
+11	Request Memoization	Deduplication: Use the v16 cache() function for non-fetch data (like DB calls) across the tree.	Pending
+12	Advanced TS Patterns	Generic Components: Build a Table component that takes a Generic T and stays 100% type-safe.	Pending
+13	Design Systems	WCAG + Tailwind: Build a system where "High Contrast" mode is a first-class citizen using CSS variables.	Pending
+14	Performance Audit	Turbopack Build: Run your first production build with Turbopack and analyze the bundle map.	Pending
+15	Vercel AI SDK 5	useChat: Implement a streaming chat with the new v5 "Data Parts" for rich metadata.	Pending
+16	Tool Calling	Function Execution: Give your AI a tool to "Check Order Status" from your actual MongoDB.	Pending
+17	RAG Pipeline	Vector DB: Use pgvector or Pinecone to feed your documentation into the AI context.	Pending
+18	Generative UI	Server-to-UI: Have the AI return a <WeatherCard /> or <Chart /> component instead of text.	Pending
+19	Token Management	Summarization: Implement a sliding window for chat history to keep costs low and context high.	Pending
+20	AI Accessibility	Aria-Live: Use aria-live="polite" to ensure screen readers announce streaming AI text correctly.	Pending
+21	Model Comparison	Claude vs GPT-4o: Test which model handles your specific Next.js 16 code patterns better.	Pending
+22	MCP Basics	DevTools MCP: Connect your local dev server to a Claude Desktop agent using the MCP protocol.	Pending
+23	Custom MCP Tools	Git Summarizer: Build an MCP tool that lets the AI read your commits to write a Daily Standup note.	Pending
+24	Multi-Agent Flow	Critic Agent: Agent 1 writes code, Agent 2 reviews it for bugs before the user sees it.	Pending
+25	Real-time Agents	Live Updates: Use WebSockets to let an AI "take over" the UI and guide a user through a flow.	Pending
+26	Vercel Deployment	Edge Functions: Deploy your AI routes to the Edge to minimize TTFB (Time to First Byte).	Pending
+27	Final Project Pt 1	Architecture: Draft the system diagram (Next.js, MongoDB, RAG, MCP).	Pending
+28	Final Project Pt 2	The Pitch: Build a fully functional, AI-powered product that solves a real-world frontend problem.	PendingDay	Task	Next.js 16 "Twist"	Status
+1	RSC Interleaving	Async Params: Fetch data in a layout by await-ing params. Pass that data to a Client Component.	Done
+2	Server Actions 2.0	updateTag: Use the new updateTag API to expire cache and "read-your-writes" in one request.	Pending
+3	useActionState	React 19 Stable: Use this for all form states. No more useState for loading/errors.	Pending
+4	Optimistic UI	useOptimistic: Implement a collaborative list where items appear before the DB acknowledges.	Pending
+5	Zod Validation	Typed Actions: Return structured errors from Actions and map them to fields using useActionState.	Pending
+6	Taint API	Security: Use taintObjectReference to block a User's secret API key from ever reaching the client.	Pending
+7	Review	React Compiler: Enable reactCompiler: true and audit how much useMemo you can delete.	Pending
+8	Partial Prerendering	cacheComponents: Enable the new unified flag in next.config.js to trigger PPR.	Pending
+9	Advanced Middleware	Proxy.ts: Note that middleware is often renamed/used as a Proxy in v16 for explicit boundaries.	Pending
+10	Streaming & Suspense	Nested Boundaries: Stream a slow AI-generated summary while the page shell is already interactive.	Pending
+11	Request Memoization	Deduplication: Use the v16 cache() function for non-fetch data (like DB calls) across the tree.	Pending
+12	Advanced TS Patterns	Generic Components: Build a Table component that takes a Generic T and stays 100% type-safe.	Pending
+13	Design Systems	WCAG + Tailwind: Build a system where "High Contrast" mode is a first-class citizen using CSS variables.	Pending
+14	Performance Audit	Turbopack Build: Run your first production build with Turbopack and analyze the bundle map.	Pending
+15	Vercel AI SDK 5	useChat: Implement a streaming chat with the new v5 "Data Parts" for rich metadata.	Pending
+16	Tool Calling	Function Execution: Give your AI a tool to "Check Order Status" from your actual MongoDB.	Pending
+17	RAG Pipeline	Vector DB: Use pgvector or Pinecone to feed your documentation into the AI context.	Pending
+18	Generative UI	Server-to-UI: Have the AI return a <WeatherCard /> or <Chart /> component instead of text.	Pending
+19	Token Management	Summarization: Implement a sliding window for chat history to keep costs low and context high.	Pending
+20	AI Accessibility	Aria-Live: Use aria-live="polite" to ensure screen readers announce streaming AI text correctly.	Pending
+21	Model Comparison	Claude vs GPT-4o: Test which model handles your specific Next.js 16 code patterns better.	Pending
+22	MCP Basics	DevTools MCP: Connect your local dev server to a Claude Desktop agent using the MCP protocol.	Pending
+23	Custom MCP Tools	Git Summarizer: Build an MCP tool that lets the AI read your commits to write a Daily Standup note.	Pending
+24	Multi-Agent Flow	Critic Agent: Agent 1 writes code, Agent 2 reviews it for bugs before the user sees it.	Pending
+25	Real-time Agents	Live Updates: Use WebSockets to let an AI "take over" the UI and guide a user through a flow.	Pending
+26	Vercel Deployment	Edge Functions: Deploy your AI routes to the Edge to minimize TTFB (Time to First Byte).	Pending
+27	Final Project Pt 1	Architecture: Draft the system diagram (Next.js, MongoDB, RAG, MCP).	Pending
+28	Final Project Pt 2	The Pitch: Build a fully functional, AI-powered product that solves a real-world frontend problem.	PendingDay	Task	Next.js 16 "Twist"	Status
+1	RSC Interleaving	Async Params: Fetch data in a layout by await-ing params. Pass that data to a Client Component.	Done
+2	Server Actions 2.0	updateTag: Use the new updateTag API to expire cache and "read-your-writes" in one request.	Pending
+3	useActionState	React 19 Stable: Use this for all form states. No more useState for loading/errors.	Pending
+4	Optimistic UI	useOptimistic: Implement a collaborative list where items appear before the DB acknowledges.	Pending
+5	Zod Validation	Typed Actions: Return structured errors from Actions and map them to fields using useActionState.	Pending
+6	Taint API	Security: Use taintObjectReference to block a User's secret API key from ever reaching the client.	Pending
+7	Review	React Compiler: Enable reactCompiler: true and audit how much useMemo you can delete.	Pending
+8	Partial Prerendering	cacheComponents: Enable the new unified flag in next.config.js to trigger PPR.	Pending
+9	Advanced Middleware	Proxy.ts: Note that middleware is often renamed/used as a Proxy in v16 for explicit boundaries.	Pending
+10	Streaming & Suspense	Nested Boundaries: Stream a slow AI-generated summary while the page shell is already interactive.	Pending
+11	Request Memoization	Deduplication: Use the v16 cache() function for non-fetch data (like DB calls) across the tree.	Pending
+12	Advanced TS Patterns	Generic Components: Build a Table component that takes a Generic T and stays 100% type-safe.	Pending
+13	Design Systems	WCAG + Tailwind: Build a system where "High Contrast" mode is a first-class citizen using CSS variables.	Pending
+14	Performance Audit	Turbopack Build: Run your first production build with Turbopack and analyze the bundle map.	Pending
+15	Vercel AI SDK 5	useChat: Implement a streaming chat with the new v5 "Data Parts" for rich metadata.	Pending
+16	Tool Calling	Function Execution: Give your AI a tool to "Check Order Status" from your actual MongoDB.	Pending
+17	RAG Pipeline	Vector DB: Use pgvector or Pinecone to feed your documentation into the AI context.	Pending
+18	Generative UI	Server-to-UI: Have the AI return a <WeatherCard /> or <Chart /> component instead of text.	Pending
+19	Token Management	Summarization: Implement a sliding window for chat history to keep costs low and context high.	Pending
+20	AI Accessibility	Aria-Live: Use aria-live="polite" to ensure screen readers announce streaming AI text correctly.	Pending
+21	Model Comparison	Claude vs GPT-4o: Test which model handles your specific Next.js 16 code patterns better.	Pending
+22	MCP Basics	DevTools MCP: Connect your local dev server to a Claude Desktop agent using the MCP protocol.	Pending
+23	Custom MCP Tools	Git Summarizer: Build an MCP tool that lets the AI read your commits to write a Daily Standup note.	Pending
+24	Multi-Agent Flow	Critic Agent: Agent 1 writes code, Agent 2 reviews it for bugs before the user sees it.	Pending
+25	Real-time Agents	Live Updates: Use WebSockets to let an AI "take over" the UI and guide a user through a flow.	Pending
+26	Vercel Deployment	Edge Functions: Deploy your AI routes to the Edge to minimize TTFB (Time to First Byte).	Pending
+27	Final Project Pt 1	Architecture: Draft the system diagram (Next.js, MongoDB, RAG, MCP).	Pending
+28	Final Project Pt 2	The Pitch: Build a fully functional, AI-powered product that solves a real-world frontend problem.	PendingDay	Task	Next.js 16 "Twist"	Status
+1	RSC Interleaving	Async Params: Fetch data in a layout by await-ing params. Pass that data to a Client Component.	Done
+2	Server Actions 2.0	updateTag: Use the new updateTag API to expire cache and "read-your-writes" in one request.	Pending
+3	useActionState	React 19 Stable: Use this for all form states. No more useState for loading/errors.	Pending
+4	Optimistic UI	useOptimistic: Implement a collaborative list where items appear before the DB acknowledges.	Pending
+5	Zod Validation	Typed Actions: Return structured errors from Actions and map them to fields using useActionState.	Pending
+6	Taint API	Security: Use taintObjectReference to block a User's secret API key from ever reaching the client.	Pending
+7	Review	React Compiler: Enable reactCompiler: true and audit how much useMemo you can delete.	Pending
+8	Partial Prerendering	cacheComponents: Enable the new unified flag in next.config.js to trigger PPR.	Pending
+9	Advanced Middleware	Proxy.ts: Note that middleware is often renamed/used as a Proxy in v16 for explicit boundaries.	Pending
+10	Streaming & Suspense	Nested Boundaries: Stream a slow AI-generated summary while the page shell is already interactive.	Pending
+11	Request Memoization	Deduplication: Use the v16 cache() function for non-fetch data (like DB calls) across the tree.	Pending
+12	Advanced TS Patterns	Generic Components: Build a Table component that takes a Generic T and stays 100% type-safe.	Pending
+13	Design Systems	WCAG + Tailwind: Build a system where "High Contrast" mode is a first-class citizen using CSS variables.	Pending
+14	Performance Audit	Turbopack Build: Run your first production build with Turbopack and analyze the bundle map.	Pending
+15	Vercel AI SDK 5	useChat: Implement a streaming chat with the new v5 "Data Parts" for rich metadata.	Pending
+16	Tool Calling	Function Execution: Give your AI a tool to "Check Order Status" from your actual MongoDB.	Pending
+17	RAG Pipeline	Vector DB: Use pgvector or Pinecone to feed your documentation into the AI context.	Pending
+18	Generative UI	Server-to-UI: Have the AI return a <WeatherCard /> or <Chart /> component instead of text.	Pending
+19	Token Management	Summarization: Implement a sliding window for chat history to keep costs low and context high.	Pending
+20	AI Accessibility	Aria-Live: Use aria-live="polite" to ensure screen readers announce streaming AI text correctly.	Pending
+21	Model Comparison	Claude vs GPT-4o: Test which model handles your specific Next.js 16 code patterns better.	Pending
+22	MCP Basics	DevTools MCP: Connect your local dev server to a Claude Desktop agent using the MCP protocol.	Pending
+23	Custom MCP Tools	Git Summarizer: Build an MCP tool that lets the AI read your commits to write a Daily Standup note.	Pending
+24	Multi-Agent Flow	Critic Agent: Agent 1 writes code, Agent 2 reviews it for bugs before the user sees it.	Pending
+25	Real-time Agents	Live Updates: Use WebSockets to let an AI "take over" the UI and guide a user through a flow.	Pending
+26	Vercel Deployment	Edge Functions: Deploy your AI routes to the Edge to minimize TTFB (Time to First Byte).	Pending
+27	Final Project Pt 1	Architecture: Draft the system diagram (Next.js, MongoDB, RAG, MCP).	Pending
+28	Final Project Pt 2	The Pitch: Build a fully functional, AI-powered product that solves a real-world frontend problem.	PendingDay	Task	Next.js 16 "Twist"	Status
+1	RSC Interleaving	Async Params: Fetch data in a layout by await-ing params. Pass that data to a Client Component.	Done
+2	Server Actions 2.0	updateTag: Use the new updateTag API to expire cache and "read-your-writes" in one request.	Pending
+3	useActionState	React 19 Stable: Use this for all form states. No more useState for loading/errors.	Pending
+4	Optimistic UI	useOptimistic: Implement a collaborative list where items appear before the DB acknowledges.	Pending
+5	Zod Validation	Typed Actions: Return structured errors from Actions and map them to fields using useActionState.	Pending
+6	Taint API	Security: Use taintObjectReference to block a User's secret API key from ever reaching the client.	Pending
+7	Review	React Compiler: Enable reactCompiler: true and audit how much useMemo you can delete.	Pending
+8	Partial Prerendering	cacheComponents: Enable the new unified flag in next.config.js to trigger PPR.	Pending
+9	Advanced Middleware	Proxy.ts: Note that middleware is often renamed/used as a Proxy in v16 for explicit boundaries.	Pending
+10	Streaming & Suspense	Nested Boundaries: Stream a slow AI-generated summary while the page shell is already interactive.	Pending
+11	Request Memoization	Deduplication: Use the v16 cache() function for non-fetch data (like DB calls) across the tree.	Pending
+12	Advanced TS Patterns	Generic Components: Build a Table component that takes a Generic T and stays 100% type-safe.	Pending
+13	Design Systems	WCAG + Tailwind: Build a system where "High Contrast" mode is a first-class citizen using CSS variables.	Pending
+14	Performance Audit	Turbopack Build: Run your first production build with Turbopack and analyze the bundle map.	Pending
+15	Vercel AI SDK 5	useChat: Implement a streaming chat with the new v5 "Data Parts" for rich metadata.	Pending
+16	Tool Calling	Function Execution: Give your AI a tool to "Check Order Status" from your actual MongoDB.	Pending
+17	RAG Pipeline	Vector DB: Use pgvector or Pinecone to feed your documentation into the AI context.	Pending
+18	Generative UI	Server-to-UI: Have the AI return a <WeatherCard /> or <Chart /> component instead of text.	Pending
+19	Token Management	Summarization: Implement a sliding window for chat history to keep costs low and context high.	Pending
+20	AI Accessibility	Aria-Live: Use aria-live="polite" to ensure screen readers announce streaming AI text correctly.	Pending
+21	Model Comparison	Claude vs GPT-4o: Test which model handles your specific Next.js 16 code patterns better.	Pending
+22	MCP Basics	DevTools MCP: Connect your local dev server to a Claude Desktop agent using the MCP protocol.	Pending
+23	Custom MCP Tools	Git Summarizer: Build an MCP tool that lets the AI read your commits to write a Daily Standup note.	Pending
+24	Multi-Agent Flow	Critic Agent: Agent 1 writes code, Agent 2 reviews it for bugs before the user sees it.	Pending
+25	Real-time Agents	Live Updates: Use WebSockets to let an AI "take over" the UI and guide a user through a flow.	Pending
+26	Vercel Deployment	Edge Functions: Deploy your AI routes to the Edge to minimize TTFB (Time to First Byte).	Pending
+27	Final Project Pt 1	Architecture: Draft the system diagram (Next.js, MongoDB, RAG, MCP).	Pending
+28	Final Project Pt 2	The Pitch: Build a fully functional, AI-powered product that solves a real-world frontend problem.	PendingDay	Task	Next.js 16 "Twist"	Status
+1	RSC Interleaving	Async Params: Fetch data in a layout by await-ing params. Pass that data to a Client Component.	Done
+2	Server Actions 2.0	updateTag: Use the new updateTag API to expire cache and "read-your-writes" in one request.	Pending
+3	useActionState	React 19 Stable: Use this for all form states. No more useState for loading/errors.	Pending
+4	Optimistic UI	useOptimistic: Implement a collaborative list where items appear before the DB acknowledges.	Pending
+5	Zod Validation	Typed Actions: Return structured errors from Actions and map them to fields using useActionState.	Pending
+6	Taint API	Security: Use taintObjectReference to block a User's secret API key from ever reaching the client.	Pending
+7	Review	React Compiler: Enable reactCompiler: true and audit how much useMemo you can delete.	Pending
+8	Partial Prerendering	cacheComponents: Enable the new unified flag in next.config.js to trigger PPR.	Pending
+9	Advanced Middleware	Proxy.ts: Note that middleware is often renamed/used as a Proxy in v16 for explicit boundaries.	Pending
+10	Streaming & Suspense	Nested Boundaries: Stream a slow AI-generated summary while the page shell is already interactive.	Pending
+11	Request Memoization	Deduplication: Use the v16 cache() function for non-fetch data (like DB calls) across the tree.	Pending
+12	Advanced TS Patterns	Generic Components: Build a Table component that takes a Generic T and stays 100% type-safe.	Pending
+13	Design Systems	WCAG + Tailwind: Build a system where "High Contrast" mode is a first-class citizen using CSS variables.	Pending
+14	Performance Audit	Turbopack Build: Run your first production build with Turbopack and analyze the bundle map.	Pending
+15	Vercel AI SDK 5	useChat: Implement a streaming chat with the new v5 "Data Parts" for rich metadata.	Pending
+16	Tool Calling	Function Execution: Give your AI a tool to "Check Order Status" from your actual MongoDB.	Pending
+17	RAG Pipeline	Vector DB: Use pgvector or Pinecone to feed your documentation into the AI context.	Pending
+18	Generative UI	Server-to-UI: Have the AI return a <WeatherCard /> or <Chart /> component instead of text.	Pending
+19	Token Management	Summarization: Implement a sliding window for chat history to keep costs low and context high.	Pending
+20	AI Accessibility	Aria-Live: Use aria-live="polite" to ensure screen readers announce streaming AI text correctly.	Pending
+21	Model Comparison	Claude vs GPT-4o: Test which model handles your specific Next.js 16 code patterns better.	Pending
+22	MCP Basics	DevTools MCP: Connect your local dev server to a Claude Desktop agent using the MCP protocol.	Pending
+23	Custom MCP Tools	Git Summarizer: Build an MCP tool that lets the AI read your commits to write a Daily Standup note.	Pending
+24	Multi-Agent Flow	Critic Agent: Agent 1 writes code, Agent 2 reviews it for bugs before the user sees it.	Pending
+25	Real-time Agents	Live Updates: Use WebSockets to let an AI "take over" the UI and guide a user through a flow.	Pending
+26	Vercel Deployment	Edge Functions: Deploy your AI routes to the Edge to minimize TTFB (Time to First Byte).	Pending
+27	Final Project Pt 1	Architecture: Draft the system diagram (Next.js, MongoDB, RAG, MCP).	Pending
+28	Final Project Pt 2	The Pitch: Build a fully functional, AI-powered product that solves a real-world frontend problem.	PendingDay	Task	Next.js 16 "Twist"	Status
+1	RSC Interleaving	Async Params: Fetch data in a layout by await-ing params. Pass that data to a Client Component.	Done
+2	Server Actions 2.0	updateTag: Use the new updateTag API to expire cache and "read-your-writes" in one request.	Pending
+3	useActionState	React 19 Stable: Use this for all form states. No more useState for loading/errors.	Pending
+4	Optimistic UI	useOptimistic: Implement a collaborative list where items appear before the DB acknowledges.	Pending
+5	Zod Validation	Typed Actions: Return structured errors from Actions and map them to fields using useActionState.	Pending
+6	Taint API	Security: Use taintObjectReference to block a User's secret API key from ever reaching the client.	Pending
+7	Review	React Compiler: Enable reactCompiler: true and audit how much useMemo you can delete.	Pending
+8	Partial Prerendering	cacheComponents: Enable the new unified flag in next.config.js to trigger PPR.	Pending
+9	Advanced Middleware	Proxy.ts: Note that middleware is often renamed/used as a Proxy in v16 for explicit boundaries.	Pending
+10	Streaming & Suspense	Nested Boundaries: Stream a slow AI-generated summary while the page shell is already interactive.	Pending
+11	Request Memoization	Deduplication: Use the v16 cache() function for non-fetch data (like DB calls) across the tree.	Pending
+12	Advanced TS Patterns	Generic Components: Build a Table component that takes a Generic T and stays 100% type-safe.	Pending
+13	Design Systems	WCAG + Tailwind: Build a system where "High Contrast" mode is a first-class citizen using CSS variables.	Pending
+14	Performance Audit	Turbopack Build: Run your first production build with Turbopack and analyze the bundle map.	Pending
+15	Vercel AI SDK 5	useChat: Implement a streaming chat with the new v5 "Data Parts" for rich metadata.	Pending
+16	Tool Calling	Function Execution: Give your AI a tool to "Check Order Status" from your actual MongoDB.	Pending
+17	RAG Pipeline	Vector DB: Use pgvector or Pinecone to feed your documentation into the AI context.	Pending
+18	Generative UI	Server-to-UI: Have the AI return a <WeatherCard /> or <Chart /> component instead of text.	Pending
+19	Token Management	Summarization: Implement a sliding window for chat history to keep costs low and context high.	Pending
+20	AI Accessibility	Aria-Live: Use aria-live="polite" to ensure screen readers announce streaming AI text correctly.	Pending
+21	Model Comparison	Claude vs GPT-4o: Test which model handles your specific Next.js 16 code patterns better.	Pending
+22	MCP Basics	DevTools MCP: Connect your local dev server to a Claude Desktop agent using the MCP protocol.	Pending
+23	Custom MCP Tools	Git Summarizer: Build an MCP tool that lets the AI read your commits to write a Daily Standup note.	Pending
+24	Multi-Agent Flow	Critic Agent: Agent 1 writes code, Agent 2 reviews it for bugs before the user sees it.	Pending
+25	Real-time Agents	Live Updates: Use WebSockets to let an AI "take over" the UI and guide a user through a flow.	Pending
+26	Vercel Deployment	Edge Functions: Deploy your AI routes to the Edge to minimize TTFB (Time to First Byte).	Pending
+27	Final Project Pt 1	Architecture: Draft the system diagram (Next.js, MongoDB, RAG, MCP).	Pending
+28	Final Project Pt 2	The Pitch: Build a fully functional, AI-powered product that solves a real-world frontend problem.	PendingDay	Task	Next.js 16 "Twist"	Status
+1	RSC Interleaving	Async Params: Fetch data in a layout by await-ing params. Pass that data to a Client Component.	Done
+2	Server Actions 2.0	updateTag: Use the new updateTag API to expire cache and "read-your-writes" in one request.	Pending
+3	useActionState	React 19 Stable: Use this for all form states. No more useState for loading/errors.	Pending
+4	Optimistic UI	useOptimistic: Implement a collaborative list where items appear before the DB acknowledges.	Pending
+5	Zod Validation	Typed Actions: Return structured errors from Actions and map them to fields using useActionState.	Pending
+6	Taint API	Security: Use taintObjectReference to block a User's secret API key from ever reaching the client.	Pending
+7	Review	React Compiler: Enable reactCompiler: true and audit how much useMemo you can delete.	Pending
+8	Partial Prerendering	cacheComponents: Enable the new unified flag in next.config.js to trigger PPR.	Pending
+9	Advanced Middleware	Proxy.ts: Note that middleware is often renamed/used as a Proxy in v16 for explicit boundaries.	Pending
+10	Streaming & Suspense	Nested Boundaries: Stream a slow AI-generated summary while the page shell is already interactive.	Pending
+11	Request Memoization	Deduplication: Use the v16 cache() function for non-fetch data (like DB calls) across the tree.	Pending
+12	Advanced TS Patterns	Generic Components: Build a Table component that takes a Generic T and stays 100% type-safe.	Pending
+13	Design Systems	WCAG + Tailwind: Build a system where "High Contrast" mode is a first-class citizen using CSS variables.	Pending
+14	Performance Audit	Turbopack Build: Run your first production build with Turbopack and analyze the bundle map.	Pending
+15	Vercel AI SDK 5	useChat: Implement a streaming chat with the new v5 "Data Parts" for rich metadata.	Pending
+16	Tool Calling	Function Execution: Give your AI a tool to "Check Order Status" from your actual MongoDB.	Pending
+17	RAG Pipeline	Vector DB: Use pgvector or Pinecone to feed your documentation into the AI context.	Pending
+18	Generative UI	Server-to-UI: Have the AI return a <WeatherCard /> or <Chart /> component instead of text.	Pending
+19	Token Management	Summarization: Implement a sliding window for chat history to keep costs low and context high.	Pending
+20	AI Accessibility	Aria-Live: Use aria-live="polite" to ensure screen readers announce streaming AI text correctly.	Pending
+21	Model Comparison	Claude vs GPT-4o: Test which model handles your specific Next.js 16 code patterns better.	Pending
+22	MCP Basics	DevTools MCP: Connect your local dev server to a Claude Desktop agent using the MCP protocol.	Pending
+23	Custom MCP Tools	Git Summarizer: Build an MCP tool that lets the AI read your commits to write a Daily Standup note.	Pending
+24	Multi-Agent Flow	Critic Agent: Agent 1 writes code, Agent 2 reviews it for bugs before the user sees it.	Pending
+25	Real-time Agents	Live Updates: Use WebSockets to let an AI "take over" the UI and guide a user through a flow.	Pending
+26	Vercel Deployment	Edge Functions: Deploy your AI routes to the Edge to minimize TTFB (Time to First Byte).	Pending
+27	Final Project Pt 1	Architecture: Draft the system diagram (Next.js, MongoDB, RAG, MCP).	Pending
+28	Final Project Pt 2	The Pitch: Build a fully functional, AI-powered product that solves a real-world frontend problem.	PendingDay	Task	Next.js 16 "Twist"	Status
+1	RSC Interleaving	Async Params: Fetch data in a layout by await-ing params. Pass that data to a Client Component.	Done
+2	Server Actions 2.0	updateTag: Use the new updateTag API to expire cache and "read-your-writes" in one request.	Pending
+3	useActionState	React 19 Stable: Use this for all form states. No more useState for loading/errors.	Pending
+4	Optimistic UI	useOptimistic: Implement a collaborative list where items appear before the DB acknowledges.	Pending
+5	Zod Validation	Typed Actions: Return structured errors from Actions and map them to fields using useActionState.	Pending
+6	Taint API	Security: Use taintObjectReference to block a User's secret API key from ever reaching the client.	Pending
+7	Review	React Compiler: Enable reactCompiler: true and audit how much useMemo you can delete.	Pending
+8	Partial Prerendering	cacheComponents: Enable the new unified flag in next.config.js to trigger PPR.	Pending
+9	Advanced Middleware	Proxy.ts: Note that middleware is often renamed/used as a Proxy in v16 for explicit boundaries.	Pending
+10	Streaming & Suspense	Nested Boundaries: Stream a slow AI-generated summary while the page shell is already interactive.	Pending
+11	Request Memoization	Deduplication: Use the v16 cache() function for non-fetch data (like DB calls) across the tree.	Pending
+12	Advanced TS Patterns	Generic Components: Build a Table component that takes a Generic T and stays 100% type-safe.	Pending
+13	Design Systems	WCAG + Tailwind: Build a system where "High Contrast" mode is a first-class citizen using CSS variables.	Pending
+14	Performance Audit	Turbopack Build: Run your first production build with Turbopack and analyze the bundle map.	Pending
+15	Vercel AI SDK 5	useChat: Implement a streaming chat with the new v5 "Data Parts" for rich metadata.	Pending
+16	Tool Calling	Function Execution: Give your AI a tool to "Check Order Status" from your actual MongoDB.	Pending
+17	RAG Pipeline	Vector DB: Use pgvector or Pinecone to feed your documentation into the AI context.	Pending
+18	Generative UI	Server-to-UI: Have the AI return a <WeatherCard /> or <Chart /> component instead of text.	Pending
+19	Token Management	Summarization: Implement a sliding window for chat history to keep costs low and context high.	Pending
+20	AI Accessibility	Aria-Live: Use aria-live="polite" to ensure screen readers announce streaming AI text correctly.	Pending
+21	Model Comparison	Claude vs GPT-4o: Test which model handles your specific Next.js 16 code patterns better.	Pending
+22	MCP Basics	DevTools MCP: Connect your local dev server to a Claude Desktop agent using the MCP protocol.	Pending
+23	Custom MCP Tools	Git Summarizer: Build an MCP tool that lets the AI read your commits to write a Daily Standup note.	Pending
+24	Multi-Agent Flow	Critic Agent: Agent 1 writes code, Agent 2 reviews it for bugs before the user sees it.	Pending
+25	Real-time Agents	Live Updates: Use WebSockets to let an AI "take over" the UI and guide a user through a flow.	Pending
+26	Vercel Deployment	Edge Functions: Deploy your AI routes to the Edge to minimize TTFB (Time to First Byte).	Pending
+27	Final Project Pt 1	Architecture: Draft the system diagram (Next.js, MongoDB, RAG, MCP).	Pending
+28	Final Project Pt 2	The Pitch: Build a fully functional, AI-powered product that solves a real-world frontend problem.	PendingDay	Task	Next.js 16 "Twist"	Status
+1	RSC Interleaving	Async Params: Fetch data in a layout by await-ing params. Pass that data to a Client Component.	Done
+2	Server Actions 2.0	updateTag: Use the new updateTag API to expire cache and "read-your-writes" in one request.	Pending
+3	useActionState	React 19 Stable: Use this for all form states. No more useState for loading/errors.	Pending
+4	Optimistic UI	useOptimistic: Implement a collaborative list where items appear before the DB acknowledges.	Pending
+5	Zod Validation	Typed Actions: Return structured errors from Actions and map them to fields using useActionState.	Pending
+6	Taint API	Security: Use taintObjectReference to block a User's secret API key from ever reaching the client.	Pending
+7	Review	React Compiler: Enable reactCompiler: true and audit how much useMemo you can delete.	Pending
+8	Partial Prerendering	cacheComponents: Enable the new unified flag in next.config.js to trigger PPR.	Pending
+9	Advanced Middleware	Proxy.ts: Note that middleware is often renamed/used as a Proxy in v16 for explicit boundaries.	Pending
+10	Streaming & Suspense	Nested Boundaries: Stream a slow AI-generated summary while the page shell is already interactive.	Pending
+11	Request Memoization	Deduplication: Use the v16 cache() function for non-fetch data (like DB calls) across the tree.	Pending
+12	Advanced TS Patterns	Generic Components: Build a Table component that takes a Generic T and stays 100% type-safe.	Pending
+13	Design Systems	WCAG + Tailwind: Build a system where "High Contrast" mode is a first-class citizen using CSS variables.	Pending
+14	Performance Audit	Turbopack Build: Run your first production build with Turbopack and analyze the bundle map.	Pending
+15	Vercel AI SDK 5	useChat: Implement a streaming chat with the new v5 "Data Parts" for rich metadata.	Pending
+16	Tool Calling	Function Execution: Give your AI a tool to "Check Order Status" from your actual MongoDB.	Pending
+17	RAG Pipeline	Vector DB: Use pgvector or Pinecone to feed your documentation into the AI context.	Pending
+18	Generative UI	Server-to-UI: Have the AI return a <WeatherCard /> or <Chart /> component instead of text.	Pending
+19	Token Management	Summarization: Implement a sliding window for chat history to keep costs low and context high.	Pending
+20	AI Accessibility	Aria-Live: Use aria-live="polite" to ensure screen readers announce streaming AI text correctly.	Pending
+21	Model Comparison	Claude vs GPT-4o: Test which model handles your specific Next.js 16 code patterns better.	Pending
+22	MCP Basics	DevTools MCP: Connect your local dev server to a Claude Desktop agent using the MCP protocol.	Pending
+23	Custom MCP Tools	Git Summarizer: Build an MCP tool that lets the AI read your commits to write a Daily Standup note.	Pending
+24	Multi-Agent Flow	Critic Agent: Agent 1 writes code, Agent 2 reviews it for bugs before the user sees it.	Pending
+25	Real-time Agents	Live Updates: Use WebSockets to let an AI "take over" the UI and guide a user through a flow.	Pending
+26	Vercel Deployment	Edge Functions: Deploy your AI routes to the Edge to minimize TTFB (Time to First Byte).	Pending
+27	Final Project Pt 1	Architecture: Draft the system diagram (Next.js, MongoDB, RAG, MCP).	Pending
+28	Final Project Pt 2	The Pitch: Build a fully functional, AI-powered product that solves a real-world frontend problem.	PendingDay	Task	Next.js 16 "Twist"	Status
+1	RSC Interleaving	Async Params: Fetch data in a layout by await-ing params. Pass that data to a Client Component.	Done
+2	Server Actions 2.0	updateTag: Use the new updateTag API to expire cache and "read-your-writes" in one request.	Pending
+3	useActionState	React 19 Stable: Use this for all form states. No more useState for loading/errors.	Pending
+4	Optimistic UI	useOptimistic: Implement a collaborative list where items appear before the DB acknowledges.	Pending
+5	Zod Validation	Typed Actions: Return structured errors from Actions and map them to fields using useActionState.	Pending
+6	Taint API	Security: Use taintObjectReference to block a User's secret API key from ever reaching the client.	Pending
+7	Review	React Compiler: Enable reactCompiler: true and audit how much useMemo you can delete.	Pending
+8	Partial Prerendering	cacheComponents: Enable the new unified flag in next.config.js to trigger PPR.	Pending
+9	Advanced Middleware	Proxy.ts: Note that middleware is often renamed/used as a Proxy in v16 for explicit boundaries.	Pending
+10	Streaming & Suspense	Nested Boundaries: Stream a slow AI-generated summary while the page shell is already interactive.	Pending
+11	Request Memoization	Deduplication: Use the v16 cache() function for non-fetch data (like DB calls) across the tree.	Pending
+12	Advanced TS Patterns	Generic Components: Build a Table component that takes a Generic T and stays 100% type-safe.	Pending
+13	Design Systems	WCAG + Tailwind: Build a system where "High Contrast" mode is a first-class citizen using CSS variables.	Pending
+14	Performance Audit	Turbopack Build: Run your first production build with Turbopack and analyze the bundle map.	Pending
+15	Vercel AI SDK 5	useChat: Implement a streaming chat with the new v5 "Data Parts" for rich metadata.	Pending
+16	Tool Calling	Function Execution: Give your AI a tool to "Check Order Status" from your actual MongoDB.	Pending
+17	RAG Pipeline	Vector DB: Use pgvector or Pinecone to feed your documentation into the AI context.	Pending
+18	Generative UI	Server-to-UI: Have the AI return a <WeatherCard /> or <Chart /> component instead of text.	Pending
+19	Token Management	Summarization: Implement a sliding window for chat history to keep costs low and context high.	Pending
+20	AI Accessibility	Aria-Live: Use aria-live="polite" to ensure screen readers announce streaming AI text correctly.	Pending
+21	Model Comparison	Claude vs GPT-4o: Test which model handles your specific Next.js 16 code patterns better.	Pending
+22	MCP Basics	DevTools MCP: Connect your local dev server to a Claude Desktop agent using the MCP protocol.	Pending
+23	Custom MCP Tools	Git Summarizer: Build an MCP tool that lets the AI read your commits to write a Daily Standup note.	Pending
+24	Multi-Agent Flow	Critic Agent: Agent 1 writes code, Agent 2 reviews it for bugs before the user sees it.	Pending
+25	Real-time Agents	Live Updates: Use WebSockets to let an AI "take over" the UI and guide a user through a flow.	Pending
+26	Vercel Deployment	Edge Functions: Deploy your AI routes to the Edge to minimize TTFB (Time to First Byte).	Pending
+27	Final Project Pt 1	Architecture: Draft the system diagram (Next.js, MongoDB, RAG, MCP).	Pending
+28	Final Project Pt 2	The Pitch: Build a fully functional, AI-powered product that solves a real-world frontend problem.	PendingDay	Task	Next.js 16 "Twist"	Status
+1	RSC Interleaving	Async Params: Fetch data in a layout by await-ing params. Pass that data to a Client Component.	Done
+2	Server Actions 2.0	updateTag: Use the new updateTag API to expire cache and "read-your-writes" in one request.	Pending
+3	useActionState	React 19 Stable: Use this for all form states. No more useState for loading/errors.	Pending
+4	Optimistic UI	useOptimistic: Implement a collaborative list where items appear before the DB acknowledges.	Pending
+5	Zod Validation	Typed Actions: Return structured errors from Actions and map them to fields using useActionState.	Pending
+6	Taint API	Security: Use taintObjectReference to block a User's secret API key from ever reaching the client.	Pending
+7	Review	React Compiler: Enable reactCompiler: true and audit how much useMemo you can delete.	Pending
+8	Partial Prerendering	cacheComponents: Enable the new unified flag in next.config.js to trigger PPR.	Pending
+9	Advanced Middleware	Proxy.ts: Note that middleware is often renamed/used as a Proxy in v16 for explicit boundaries.	Pending
+10	Streaming & Suspense	Nested Boundaries: Stream a slow AI-generated summary while the page shell is already interactive.	Pending
+11	Request Memoization	Deduplication: Use the v16 cache() function for non-fetch data (like DB calls) across the tree.	Pending
+12	Advanced TS Patterns	Generic Components: Build a Table component that takes a Generic T and stays 100% type-safe.	Pending
+13	Design Systems	WCAG + Tailwind: Build a system where "High Contrast" mode is a first-class citizen using CSS variables.	Pending
+14	Performance Audit	Turbopack Build: Run your first production build with Turbopack and analyze the bundle map.	Pending
+15	Vercel AI SDK 5	useChat: Implement a streaming chat with the new v5 "Data Parts" for rich metadata.	Pending
+16	Tool Calling	Function Execution: Give your AI a tool to "Check Order Status" from your actual MongoDB.	Pending
+17	RAG Pipeline	Vector DB: Use pgvector or Pinecone to feed your documentation into the AI context.	Pending
+18	Generative UI	Server-to-UI: Have the AI return a <WeatherCard /> or <Chart /> component instead of text.	Pending
+19	Token Management	Summarization: Implement a sliding window for chat history to keep costs low and context high.	Pending
+20	AI Accessibility	Aria-Live: Use aria-live="polite" to ensure screen readers announce streaming AI text correctly.	Pending
+21	Model Comparison	Claude vs GPT-4o: Test which model handles your specific Next.js 16 code patterns better.	Pending
+22	MCP Basics	DevTools MCP: Connect your local dev server to a Claude Desktop agent using the MCP protocol.	Pending
+23	Custom MCP Tools	Git Summarizer: Build an MCP tool that lets the AI read your commits to write a Daily Standup note.	Pending
+24	Multi-Agent Flow	Critic Agent: Agent 1 writes code, Agent 2 reviews it for bugs before the user sees it.	Pending
+25	Real-time Agents	Live Updates: Use WebSockets to let an AI "take over" the UI and guide a user through a flow.	Pending
+26	Vercel Deployment	Edge Functions: Deploy your AI routes to the Edge to minimize TTFB (Time to First Byte).	Pending
+27	Final Project Pt 1	Architecture: Draft the system diagram (Next.js, MongoDB, RAG, MCP).	Pending
+28	Final Project Pt 2	The Pitch: Build a fully functional, AI-powered product that solves a real-world frontend problem.	PendingDay	Task	Next.js 16 "Twist"	Status
+1	RSC Interleaving	Async Params: Fetch data in a layout by await-ing params. Pass that data to a Client Component.	Done
+2	Server Actions 2.0	updateTag: Use the new updateTag API to expire cache and "read-your-writes" in one request.	Pending
+3	useActionState	React 19 Stable: Use this for all form states. No more useState for loading/errors.	Pending
+4	Optimistic UI	useOptimistic: Implement a collaborative list where items appear before the DB acknowledges.	Pending
+5	Zod Validation	Typed Actions: Return structured errors from Actions and map them to fields using useActionState.	Pending
+6	Taint API	Security: Use taintObjectReference to block a User's secret API key from ever reaching the client.	Pending
+7	Review	React Compiler: Enable reactCompiler: true and audit how much useMemo you can delete.	Pending
+8	Partial Prerendering	cacheComponents: Enable the new unified flag in next.config.js to trigger PPR.	Pending
+9	Advanced Middleware	Proxy.ts: Note that middleware is often renamed/used as a Proxy in v16 for explicit boundaries.	Pending
+10	Streaming & Suspense	Nested Boundaries: Stream a slow AI-generated summary while the page shell is already interactive.	Pending
+11	Request Memoization	Deduplication: Use the v16 cache() function for non-fetch data (like DB calls) across the tree.	Pending
+12	Advanced TS Patterns	Generic Components: Build a Table component that takes a Generic T and stays 100% type-safe.	Pending
+13	Design Systems	WCAG + Tailwind: Build a system where "High Contrast" mode is a first-class citizen using CSS variables.	Pending
+14	Performance Audit	Turbopack Build: Run your first production build with Turbopack and analyze the bundle map.	Pending
+15	Vercel AI SDK 5	useChat: Implement a streaming chat with the new v5 "Data Parts" for rich metadata.	Pending
+16	Tool Calling	Function Execution: Give your AI a tool to "Check Order Status" from your actual MongoDB.	Pending
+17	RAG Pipeline	Vector DB: Use pgvector or Pinecone to feed your documentation into the AI context.	Pending
+18	Generative UI	Server-to-UI: Have the AI return a <WeatherCard /> or <Chart /> component instead of text.	Pending
+19	Token Management	Summarization: Implement a sliding window for chat history to keep costs low and context high.	Pending
+20	AI Accessibility	Aria-Live: Use aria-live="polite" to ensure screen readers announce streaming AI text correctly.	Pending
+21	Model Comparison	Claude vs GPT-4o: Test which model handles your specific Next.js 16 code patterns better.	Pending
+22	MCP Basics	DevTools MCP: Connect your local dev server to a Claude Desktop agent using the MCP protocol.	Pending
+23	Custom MCP Tools	Git Summarizer: Build an MCP tool that lets the AI read your commits to write a Daily Standup note.	Pending
+24	Multi-Agent Flow	Critic Agent: Agent 1 writes code, Agent 2 reviews it for bugs before the user sees it.	Pending
+25	Real-time Agents	Live Updates: Use WebSockets to let an AI "take over" the UI and guide a user through a flow.	Pending
+26	Vercel Deployment	Edge Functions: Deploy your AI routes to the Edge to minimize TTFB (Time to First Byte).	Pending
+27	Final Project Pt 1	Architecture: Draft the system diagram (Next.js, MongoDB, RAG, MCP).	Pending
+28	Final Project Pt 2	The Pitch: Build a fully functional, AI-powered product that solves a real-world frontend problem.	Pending
